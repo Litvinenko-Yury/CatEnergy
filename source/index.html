@@ -3,12 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Startkit</title>
-  <meta name="robots" content="noindex,nofollow">
+  <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="preload" href="fonts/opensans.woff2" as="font">
-  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
-  <link rel="preload" href="fonts/opensanslight.woff2" as="font"> -->
+  <link rel="preload" href="fonts/oswald-v25-latin_cyrillic-regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald-v25-latin_cyrillic-500.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
   <!-- <script>
     document.createElement("picture");
@@ -23,6 +21,29 @@
 
   <header class="page-header">
     <div class="page-header__wrap">
+      <nav class="main-nav">
+        <button class="burger" aria-label="Показать главное меню">
+          <span>Показать главное меню</span>
+        </button>
+
+        <ul class="main-nav__list main-nav__list--js" id="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Пункт меню 1</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Пункт меню 2</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Пункт меню 3</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Пункт меню 4</a>
+          </li>
+        </ul>
+      </nav>
+
+
+
     </div>
   </header>
 
@@ -34,8 +55,9 @@
     </div>
   </footer>
 
-  <script>objectFitImages();</script>
+
   <script src="js/ofi.min.js"></script>
+  <script>objectFitImages();</script>
   <!-- <script src="js/script.js"></script> -->
 </body>
 
