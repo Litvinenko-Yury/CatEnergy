@@ -4,10 +4,20 @@
 @import "blocks/global.scss";
 //===
 // импорт остальных блоков
+@import "blocks/advantages.scss";
+@import "blocks/banner.scss";
 @import "blocks/btn.scss";
+@import "blocks/burger.scss";
+@import "blocks/card.scss";
+@import "blocks/categories.scss";
+@import "blocks/compare.scss";
+@import "blocks/contacts.scss";
+@import "blocks/first-screen.scss";
+@import "blocks/links.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/map.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
-
+@import "blocks/social.scss";

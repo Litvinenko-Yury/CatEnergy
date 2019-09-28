@@ -1,3 +1,11 @@
-.page-header {
-  margin: 0 auto;
+.page-header__wrap {
+  @media (min-width: $tablet-width) {
+    width: $content-width--tablet;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $content-width--desktop;
+    margin: 0 auto;
+  }
 }

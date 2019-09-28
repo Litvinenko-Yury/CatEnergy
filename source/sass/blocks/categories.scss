@@ -1,0 +1,18 @@
+.categories {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.categories__wrap {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: $content-width--desktop;
+    margin: 0 auto;
+  }
+}

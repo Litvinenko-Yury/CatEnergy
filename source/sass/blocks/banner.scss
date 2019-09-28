@@ -1,0 +1,40 @@
+.banner {
+  outline: 2px solid red;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: $content-width--mob;
+  margin: 0 auto;
+
+  background: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: $content-width--tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    z-index: 1;
+    top: 94px;
+    left: 50%;
+    transform: translateX(-$content-width--desktop / 2);
+    width: 570px;
+  }
+}
+
+.banner__title {
+  outline: 2px dotted blue;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+  }
+}
+
+.banner__text {
+  outline: 2px dotted blue;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+  }
+}

@@ -20,6 +20,7 @@ $font-size: 14px;
 $font-size--smaller: 12px;
 //$font-size--small: px;
 
+$line-height-large: 1.6667em;
 $line-height: 1.2857em;
 $line-height-auto: 1.2em;
 
@@ -30,7 +31,7 @@ $line-height-auto: 1.2em;
 //$color-main--lightest: ;
 //$color-main--lighten: ;
 //$color-main--light: ;
-//$color-main: #283645;
+$color-main: #68b738;
 //$color-main--dark: ;
 //$color-main--darken: ;
 //$color-main--darkest: ;
@@ -43,22 +44,26 @@ $line-height-auto: 1.2em;
 //$color-second--darken: ;
 //$color-main--darkest: ;
 
+$color-map: #fdf7f1;
+
 // $gray--lightest: ;
 //$gray--lighten: ;
 //$gray--light: ;
-//$gray-base: ;
+$gray-base: #f2f2f2; //242-242-242
 //$gray--dark: ;
 //$gray--darken: ;
-//$gray--darker: ;
+$gray--darker: #333333; //51-51-51
 //$gray--darkenest: ;
 //$gray--darkest: ;
 
-//$text-color: ; // Global text color on <body>;
+$text-color: #333333; //51-51-51; // Global text color on <body>;
 
 //=============================
 //===Components===
 //=============================
-//$content-width: ;
+$content-width--desktop: 1220px;
+$content-width--tablet: 708px;
+$content-width--mob: 280px;
 
 //$padding-base-vertical:;
 //$padding-base-horizontal: ;
@@ -79,8 +84,8 @@ $line-height-auto: 1.2em;
 
 //$btn-padding-vertical--large: px;
 //$btn-padding-horizontal--large: px;
-//$btn-padding-vertical: px;
-//$btn-padding-horizontal: px;;
+$btn-padding-vertical: 12px;
+$btn-padding-horizontal: 80px;
 //$btn-padding-vertical--small: px;
 //$btn-padding-horizontal--small: px;
 
@@ -117,16 +122,17 @@ $line-height-auto: 1.2em;
 //=============================
 //===Media queries breakpoints===
 //=============================
-//$tablet-width: 660px;
-//$desktop-width: 960px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
 
 //=============================
 //===Retina queries breakpoints===
 //=============================
-// $retina-dpi: 144dpi;
-// $retina-dppx: 1.5dppx;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 //=============================
 //===Animate===
 //=============================
-//$transition-time ;
+$transition-time: 0.2s;
+$transition-time--show: 0.3s;

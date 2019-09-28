@@ -1,0 +1,141 @@
+.compare {
+  //background: $gray-base;
+  background: #ffa483;
+}
+
+.compare__wrap {
+  background: #ff6c37;
+
+  width: $content-width--mob;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $content-width--tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+
+    width: $content-width--desktop;
+  }
+}
+
+.compare__container-1 {
+  outline: 4px solid darkviolet;
+  background: #48d1cc;
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
+    margin: 0;
+  }
+}
+
+.compare__title {
+  line-height: $line-height-large;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 150px;
+  }
+}
+
+.compare__text {
+  margin-bottom: 20px;
+  line-height: $line-height;
+}
+
+.compare__count-wrap {
+  border: 1px solid blueviolet;
+
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.compare__count-box {
+  border: 3px dotted maroon;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.compare__count {
+  border: 1px dotted green;
+
+  width: 123px;
+  height: 55px;
+
+  &--first {
+    @media (min-width: $tablet-width) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.compare__total {
+  border: 2px dotted chartreuse;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+.compare__total-text {
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
+  }
+}
+
+.compare__container-2 {
+  border: 4px solid dodgerblue;
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+  }
+}
+
+.compare__img-container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 650px;
+  }
+}
+
+.compare__img-subcontainer {
+  margin-bottom: 30px;
+}
+
+.compare__overlay {
+  display: none;
+}

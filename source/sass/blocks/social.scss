@@ -1,0 +1,33 @@
+.social {
+  outline: 1px dotted red;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__link-wrap {
+  margin-right: 10px;
+  background-color: coral;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: block;
+  padding: 5px;
+}
+
+.social svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: #ffffff;
+  background: #000000;
+}

@@ -1,16 +1,14 @@
-"use strict";
-var navMain = document.querySelector('.main-nav');
-var navToggle = document.querySelector('.main-nav__inner-toggle');
+"use strict"
 
-/*если JS есть, показать кнопку "откр/закр" меню*/
-navMain.classList.remove('main-nav--nojs');
+var burger = document.querySelector(".burger");
+var mainNav = document.querySelector('.main-nav__list');
 
-navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.remove('main-nav--opened');
-    navMain.classList.add('main-nav--closed');
-  }
+/*если JS есть, для mob свернуть меню и показать бургер*/
+mainNav.classList.add("main-nav__list--js");
+burger.classList.remove("burger--no-js");
+
+/*вкл/выкл анимации меню и бугера*/
+burger.addEventListener("click", function () {
+  burger.classList.toggle("burger--close");
+  mainNav.classList.toggle("main-nav__list--show");
 });
