@@ -1,18 +1,208 @@
 .card {
-  outline: 1px dotted coral;
-  margin-bottom: 20px;
-  min-height: 260px;
-  background-color: $gray-base;
+  position: relative;
+  padding: 20px;
+  background: $gray-base;
+  border: 2px solid coral;
 
   @media (min-width: $tablet-width) {
-    min-height: 370px;
+    width: 324px;
+    margin-top: 140px;
+    padding-top: 160px;
+    padding-left: 38px;
+    padding-bottom: 24px;
+    padding-right: 38px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
+    width: 245px;
+  }
+
+  /*добавляем "+" псевдоэлементом*/
+  &--last {
+    padding-top: 80px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      padding-top: 160px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 2px;
+      background: #000000;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 26px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 30px;
+      background: #000000;
+    }
+  }
+
+  &--second {
+    padding: 0 20px 0 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      margin-top: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 895px;
+      padding: 0;
+    }
   }
 }
 
-.card svg {
-  background: #000000;
+/*нужен для перестройки img/.card__body на mob/tab*/
+.card__wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+/*обертка для задания border-top и border-bottom для .card--second*/
+.card__wrapper {
+  border-top: 1px solid red;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &--second {
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &--last {
+    margin-bottom: 40px;
+    border-bottom: 1px solid red;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+  }
+}
+
+.card__img {
+  outline: 1px dotted coral;
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 140px;
+  height: 144px;
+  object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 161px;
+    height: 172px;
+  }
+
+  &--large {
+    @media (min-width: $tablet-width) {
+      top: -235px;
+      width: 195px;
+      height: 208px;
+    }
+  }
+}
+
+.card__body {
+  outline: 1px dotted blueviolet;
+  width: 50%;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+
+    display: block;
+    width: 100%;
+  }
+
+  &--last {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/*обертка для сетки на $desktop-width, для группировки .card--second*/
+.card__container-second {
+}
+
+.card__box-second {
+  outline: 2px dotted black;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 610px;
+  }
+}
+
+.card__title {
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
+
+  &--second {
+    @media (min-width: $tablet-width) {
+      text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      outline: 1px dotted red;
+      width: 285px;
+    }
+  }
+}
+
+.card__descr {
+  outline: 1px dotted green;
+  display: flex;
+  justify-content: space-between;
+
+  &--last {
+    display: block;
+  }
+
+  &--second {
+    width: 285px;
+  }
+}
+
+.card__buy {
+  width: 100%;
+  bottom: 24px;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }

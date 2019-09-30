@@ -1,0 +1,50 @@
+.declaration {
+  min-height: 289px;
+  margin-bottom: 35px;
+  padding-top: 65px;
+  background-color: $color-main;
+  background-image: url("../img/bg-declaration-mob@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+
+    margin-top: 70px;
+    margin-bottom: 75px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 225px;
+  }
+}
+
+.declaration__logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  background: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.declaration__text {
+  margin: 0 auto;
+  width: 170px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+}

@@ -8,7 +8,7 @@ $font-family-second: "Arial", sans-serif;
 $font-size-h1: 36px;
 $font-size-h2: 36px;
 $font-size-h3: 24px;
-//$font-size-h4: px;
+$font-size-h4: 16px;
 //$font-size-h5: px;
 //$font-size-h6: px;
 
@@ -85,7 +85,7 @@ $content-width--mob: 280px;
 //$btn-padding-vertical--large: px;
 //$btn-padding-horizontal--large: px;
 $btn-padding-vertical: 12px;
-$btn-padding-horizontal: 80px;
+$btn-padding-horizontal: 0;
 //$btn-padding-vertical--small: px;
 //$btn-padding-horizontal--small: px;
 
@@ -123,7 +123,7 @@ $btn-padding-horizontal: 80px;
 //===Media queries breakpoints===
 //=============================
 $tablet-width: 768px;
-$desktop-width: 1440px;
+$desktop-width: 1300px;
 
 //=============================
 //===Retina queries breakpoints===

@@ -1,3 +1,8 @@
+.page-header {
+  position: relative;
+  z-index: 10;
+}
+
 .page-header__wrap {
   @media (min-width: $tablet-width) {
     width: $content-width--tablet;

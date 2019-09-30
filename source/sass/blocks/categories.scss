@@ -16,3 +16,22 @@
     margin: 0 auto;
   }
 }
+
+.categories__card {
+  outline: 1px dotted coral;
+  margin-bottom: 20px;
+  min-height: 260px;
+  background-color: $gray-base;
+
+  @media (min-width: $tablet-width) {
+    min-height: 370px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.categories__card svg {
+  background: #000000;
+}

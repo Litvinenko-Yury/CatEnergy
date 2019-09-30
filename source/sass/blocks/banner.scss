@@ -1,16 +1,11 @@
 .banner {
   outline: 2px solid red;
 
-  display: flex;
-  justify-content: space-between;
-
-  width: $content-width--mob;
-  margin: 0 auto;
-
+  padding: 30px 20px;
   background: #ffffff;
 
   @media (min-width: $tablet-width) {
-    width: $content-width--tablet;
+    padding: 65px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +15,26 @@
     left: 50%;
     transform: translateX(-$content-width--desktop / 2);
     width: 570px;
+    padding: 70px 77px 60px 77px;
+  }
+
+  &--theme-catalog {
+    background: $gray-base;
+
+    @media (min-width: $desktop-width) {
+      background: #ffffff;
+    }
+  }
+}
+
+.banner__wrap {
+  outline: 2px solid coral;
+
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
   }
 }
 
