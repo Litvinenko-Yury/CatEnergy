@@ -28,33 +28,18 @@ $line-height-auto: 1.2em;
 /*Gray and brand colors*/
 //================
 
-//$color-main--lightest: ;
-//$color-main--lighten: ;
-//$color-main--light: ;
 $color-main: #68b738;
-//$color-main--dark: ;
-//$color-main--darken: ;
-//$color-main--darkest: ;
-
-//$color-second--lightest: ;
-//$color-second--lighten: ;
-//$color-second--light: ;
-//$color-second: ;
-//$color-second--dark: ;
-//$color-second--darken: ;
-//$color-main--darkest: ;
+$color-main--dark: #5eaa2f;
 
 $color-map: #fdf7f1;
 
-// $gray--lightest: ;
-//$gray--lighten: ;
-//$gray--light: ;
 $gray-base: #f2f2f2; //242-242-242
-//$gray--dark: ;
-//$gray--darken: ;
+$gray--dark: #ededed; //237-237-237 ;
+$gray--darken: #444444; //68-68-68;
+$gray--darker-10: rgba(50, 56, 63, 0.1); //50 56 63 0.1
 $gray--darker: #333333; //51-51-51
-//$gray--darkenest: ;
-//$gray--darkest: ;
+$gray--darkenest: #222222; //34-34-34;
+$gray--darkest: #111111; //17-17-17;
 
 $text-color: #333333; //51-51-51; // Global text color on <body>;
 
@@ -71,12 +56,23 @@ $content-width--mob: 280px;
 //$border-radius-base: ;
 
 //=============================
+//===Logo====
+//=============================
+$logo-color: $gray--darkest;
+$logo-color-text: $gray--darken;
+//$logo-color--active: ;
+$logo-color--hover: #414141;
+$logo-color--hover-text: #696969;
+$logo-color--down: #707070;
+$logo-color--down-text: #8f8f8f;
+
+//=============================
 //===Links====
 //=============================
-//$link-color: ;
+$link-color: #000000;
 //$link-color--active: ;
-//$link-color--hover: ;
-//$link-color--down: ;
+$link-color--hover: #000000;
+$link-color--down: rgba(0, 0, 0, 0.3);
 
 //=============================
 //===Buttons===
@@ -93,19 +89,28 @@ $btn-padding-horizontal: 0;
 //$btn-line-height: em;
 //$btn-font-wight: ;
 
-// $btn-color: ;
-// $btn-color-hover: ;
-// $btn-color-active: ;
+$btn-color: #ffffff;
+$btn-color--second: #333333;
+$btn-color-hover: #ffffff;
+$btn-color-down: rgba(255, 255, 255, 0.3);
 
-//$btn-border: ;
+$btn-color--second: #333333;
+$btn-color-hover--second: #333333;
+$btn-color-down--second: rgba(51, 51, 51, 0.3);
 
-//$btn-bg: ;
-//$btn-bg-hover: ;
-//$btn-bg-active: ;
+$btn-bg: $color-main;
+$btn-bg-hover: $color-main--dark;
+$btn-bg-down: $color-main--dark;
+
+$btn-bg-second: #f2f2f2;
+$btn-bg-hover--second: #ebebeb;
+$btn-bg-down--second: #ebebeb;
 
 //$btn-border-radius-base: ;
 
-//$btn-border-color-base: ;
+$btn-border-color-base: #bebebe;
+$btn-border-color-hover: #989898;
+
 
 //=============================
 //===Slider====
@@ -118,6 +123,17 @@ $btn-padding-horizontal: 0;
 //$slider-toggle--active: ;
 //$slider-toggle--hover: ;
 //$slider-toggle--down: ;
+
+
+//=============================
+//===Input===
+//=============================
+$input-border-base: #e6e6e6;
+$input-border-hover: #e6e6e6;
+$input-border-active: #444444;
+$input-border-error: #ff8282;
+
+
 
 //=============================
 //===Media queries breakpoints===
