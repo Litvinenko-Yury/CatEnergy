@@ -1,0 +1,57 @@
+.caption {
+  /*нужен для ограничения ширины и позиционирвания слева .caption__title на $width-desktop*/
+  .caption {
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  /*нужен для ограничения ширины .caption__title, что-бы правильно позиционировать псевдо-элемента для .ccaption__title, при увеличении кол-ва текста в h3*/
+  .caption__wrap {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 50px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+    }
+  }
+
+  .caption__title {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: left;
+    line-height: $line-height-large;
+
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -370px;
+        width: 330px;
+        height: 3px;
+        background: $color-main;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -1570px;
+      width: 1550px;
+      height: 3px;
+      background: $color-main;
+    }
+  }
+}

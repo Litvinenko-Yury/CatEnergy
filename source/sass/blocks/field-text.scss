@@ -1,0 +1,43 @@
+.field-text {
+  outline: 5px dotted coral;
+
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border: none;
+
+  &--wrap-inner {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $desktop-width) {
+      width: 570px;
+    }
+  }
+
+  &--email {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+
+.field-text__label {
+  outline: 2px dotted green;
+  display: flex;
+
+  &--email {
+    @media (min-width: $desktop-width) {
+      width: 570px;
+    }
+  }
+}
+
+.field-text__input {
+  flex-grow: 1;
+}
