@@ -1,11 +1,27 @@
 .links {
-  outline: 2px dotted coral;
+  outline: 1px dotted green;
+}
 
+.links__academy-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.links svg {
+.links__academy-title {
+  margin-right: 23px;
+  font-family: $font-family-second;
+  font-size: $font-size--larger;
+  line-height: 1em;
+  color: $gray--darken;
+}
+
+.links__academy-logo {
+  display: block;
   background: #000000;
 }

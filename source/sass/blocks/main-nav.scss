@@ -5,24 +5,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
-
-  
 }
 
 .main-nav__inner {
-  background: coral;
   display: flex;
   flex-wrap: no-wrap;
   justify-content: space-between;
   align-items: center;
-
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px 20px 16px 20px;
+  border-bottom: 1px solid $input-border-base;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 }
 
@@ -69,6 +67,11 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    max-width: 520px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 650px;
   }
 
   &--js {
@@ -89,12 +92,58 @@
 }
 
 .main-nav__link {
+  outline: 1px dotted green;
+
+  position: relative;
   display: block;
-  padding: 0.5em 1em;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: $font-size--x-large;
+  font-weight: 500;
+  line-height: 1em;
+  text-align: center;
+  color: $gray--darkest;
+  border-bottom: 1px solid $input-border-base;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 36px;
+    font-size: $font-size--large;
+    font-weight: 400;
+    color: $gray--darkenest;
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--x-large;
+    color: #ffffff;
+  }
 
   &:hover,
   &:focus {
-    text-decoration: none;
-    background-color: coral;
+    color: darken(#ffffff, 25%);
+  }
+
+  &:active {
+    color: darken(#ffffff, 35%);
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color-main;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        background-color: #ffffff;
+      }
+    }
   }
 }

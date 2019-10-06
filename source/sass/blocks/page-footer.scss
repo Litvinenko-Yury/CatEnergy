@@ -1,20 +1,18 @@
 .page-footer {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 40px 20px 20px 20px;
+  background: $gray-base;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 58px 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 60px 110px 56px 110px;
   }
 }
 
 .page-footer__wrap {
-  outline: 2px solid coral;
+  outline: 1px solid coral;
 
   text-align: center;
 

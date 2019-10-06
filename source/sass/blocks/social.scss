@@ -1,13 +1,23 @@
 .social {
-  outline: 1px dotted red;
+  outline: 1px dotted green;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   list-style: none;
+
+  border-top: 1px solid darken($gray--dark, 8%);
+  border-bottom: 1px solid darken($gray--dark, 8%);
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
 }
 
 .social__link-wrap {

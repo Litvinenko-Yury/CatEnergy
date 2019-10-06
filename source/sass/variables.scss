@@ -12,6 +12,7 @@ $font-size-h4: 16px;
 //$font-size-h5: px;
 //$font-size-h6: px;
 
+$font-size--giant: 281px;
 $font-size--xl-large: 24px;
 $font-size--x-large: 20px;
 $font-size--large: 18px;
@@ -38,7 +39,7 @@ $gray--dark: #ededed; //237-237-237 ;
 $gray--darken: #444444; //68-68-68;
 $gray--darker-10: rgba(50, 56, 63, 0.1); //50 56 63 0.1
 $gray--darker: #333333; //51-51-51
-$gray--darkenest: #222222; //34-34-34;
+$gray--darkenest: #161616; //34-34-34;
 $gray--darkest: #111111; //17-17-17;
 
 $text-color: #333333; //51-51-51; // Global text color on <body>;
@@ -111,7 +112,6 @@ $btn-bg-down--second: #ebebeb;
 $btn-border-color-base: #bebebe;
 $btn-border-color-hover: #989898;
 
-
 //=============================
 //===Slider====
 //=============================
@@ -124,7 +124,6 @@ $btn-border-color-hover: #989898;
 //$slider-toggle--hover: ;
 //$slider-toggle--down: ;
 
-
 //=============================
 //===Input===
 //=============================
@@ -132,8 +131,6 @@ $input-border-base: #e6e6e6;
 $input-border-hover: #e6e6e6;
 $input-border-active: #444444;
 $input-border-error: #ff8282;
-
-
 
 //=============================
 //===Media queries breakpoints===
@@ -152,3 +149,4 @@ $retina-dppx: 1.5dppx;
 //=============================
 $transition-time: 0.2s;
 $transition-time--show: 0.3s;
+$transition-time-opacity: 0.4s;

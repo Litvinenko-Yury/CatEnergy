@@ -5,8 +5,8 @@
 
 .page-header__wrap {
   @media (min-width: $tablet-width) {
-    width: $content-width--tablet;
-    margin: 0 auto;
+    //width: $content-width--tablet;
+    margin: 0 30px;
   }
 
   @media (min-width: $desktop-width) {

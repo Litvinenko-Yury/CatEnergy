@@ -1,11 +1,13 @@
 .first-screen {
   outline: 2px dotted red;
-  background: #64a83b;
 
+  position: relative;
   display: flex;
   justify-content: center;
 
   min-height: 480px;
+  padding-top: 30px;
+  padding-bottom: 22px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -16,6 +18,43 @@
   @media (min-width: $desktop-width) {
     min-height: 696px;
     margin-top: -50px;
+    margin-bottom: 80px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 305px;
+    background-color: #64a83b;
+    background-image: url("../img/bg-index-mob@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img//bg-index-mob@2x.jpg");
+    }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      left: auto;
+      right: 0;
+      width: 50%;
+      height: 100%;
+      background-image: url("../img/bg-index-desk@1x.jpg");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-index-desk@2x.jpg");
+    }
   }
 }
 
@@ -52,14 +91,30 @@
 }
 
 .first-screen_text {
+  display: inline-block;
+  margin-bottom: 30px;
   line-height: 1em;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+    font-size: $font-size--x-large;
+    color: $gray--darkest;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .first-screen__img-mob {
   outline: 2px dotted coral;
 
+  display: block;
   width: 280px;
   height: 270px;
+  margin-bottom: 5px;
   object-fit: contain;
 
   @media (min-width: $tablet-width) {
@@ -69,7 +124,7 @@
 }
 
 .first-screen__img-tab {
-  outline: 5px dotted coral;
+  outline: 1px dotted coral;
 
   display: none;
 
@@ -78,14 +133,28 @@
     width: 708px;
     height: 609px;
 
-    margin-top: -100px;
+    margin-top: -80px;
     object-fit: contain;
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
+    margin-left: -50px;
 
-    margin-top: 0;
+    margin-top: 142px;
+  }
+}
+
+.first-screen__btn {
+  width: 100%;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    max-width: 100%;
+
+    padding: $btn-padding-vertical + 3px 30px;
+    font-size: $font-size--x-large;
   }
 }

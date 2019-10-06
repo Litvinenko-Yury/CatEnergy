@@ -30,8 +30,8 @@ gulp.task("copyFolderBuild", function () {
     "!source/img/background-*.jpg", //background-*.jpg не копировать
     "source/js/**"
   ], {
-      base: "source"
-    })
+    base: "source"
+  })
     .pipe(gulp.dest("build"));
 });
 
@@ -54,7 +54,7 @@ gulp.task("css", function () {
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
-    // .pipe(server.stream());
+  // .pipe(server.stream());
 });
 
 //собрать svg-спрайт (gulp-svgstore), переименовать спрайт в "svg_sprite.svg" (gulp-rename), и сохранить в build/img.
@@ -70,9 +70,9 @@ gulp.task("svg_sprite", function () {
 //инклюдим svg-спрайт в разметку html-файла
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    .pipe(posthtml([
+    /* .pipe(posthtml([
       include()
-    ]))
+    ])) */
     .pipe(gulp.dest("build"));
 });
 
@@ -139,12 +139,14 @@ gulp.task("images", function () {
 
 //конвертируем jpg в webp (gulp-webp)
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{png,jpg}")
+  return gulp.src([
+    "source/img/**/*.{png,jpg}",
+    "!source/img/bg-*.jpg", //bg-*.jpg не конвертировать в webp
+    "!source/img/icon-map-*.{{png,jpg}" //icon-map-*.jpg не конвертировать в webp
+  ])
     .pipe(webp({ quality: 75 }))
     .pipe(gulp.dest("source/img"));
 });
-
-
 
 //задача публикации на gh-pages
 function deploy(cb) {

@@ -28,10 +28,11 @@
 }
 
 .banner__wrap {
-  outline: 2px solid coral;
+  outline: 1px solid coral;
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $desktop-width) {
     width: auto;
@@ -41,15 +42,40 @@
 .banner__title {
   outline: 2px dotted blue;
 
+  width: 125px;
+  font-size: $font-size--larger;
+  line-height: 1.25em;
+
   @media (min-width: $tablet-width) {
     width: 200px;
+    font-size: $font-size--x-large;
   }
 }
 
 .banner__text {
   outline: 2px dotted blue;
 
+  width: 135px;
+  font-family: $font-family-second;
+  line-height: 1.42em;
+  color: $gray--darken;
+
   @media (min-width: $tablet-width) {
-    width: 200px;
+    width: 160px;
+    font-size: $font-size--larger;
+    line-height: 1.25em;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.banner__line-empty {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }

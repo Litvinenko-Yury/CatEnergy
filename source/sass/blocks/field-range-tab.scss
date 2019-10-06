@@ -1,0 +1,148 @@
+.field-range-tab {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+}
+
+.field-range-tab__btn-before,
+.field-range-tab__btn-after {
+  padding-bottom: 6px;
+  font-size: $font-size--x-large;
+  text-transform: uppercase;
+  color: $gray--darkest;
+  background-color: transparent;
+  border-bottom: 1px dotted darken($gray--dark, 19%);
+
+  &:hover {
+    outline: none;
+    border-bottom: 1px solid darken($gray--dark, 35%);
+  }
+
+  &:active {
+    border-bottom: 1px solid transparent;
+  }
+}
+
+/*==============================*/
+.field-range-tab__input {
+  display: block;
+  width: 428px;
+  margin-right: 22px;
+  margin-left: 22px;
+  align-self: center;
+  height: 2em;
+  border-radius: 0.25em;
+  border: 0;
+  padding: 0;
+  background: none;
+  font-size: inherit;
+  cursor: pointer;
+  appearance: none;
+
+  &::-webkit-slider-runnable-track,
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none; // stylelint-disable-line  property-no-vendor-prefix
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  // Фоновая линия ползунка
+  // Это — локальная примесь.
+  @mixin field-range-runnable-track {
+    box-sizing: border-box;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: darken($gray-base, 9%);
+  }
+
+  // Увы, тут похожие наборы свойств приходится писать порознь.
+  &::-webkit-slider-runnable-track {
+    @include field-range-runnable-track; // локальная примесь
+  }
+
+  &::-moz-range-track {
+    @include field-range-runnable-track; // локальная примесь
+  }
+
+  &::-ms-track {
+    @include field-range-runnable-track; // локальная примесь
+    color: transparent;
+  }
+
+  // Смещающийся элемент ползунка
+  // Это — локальная примесь, 3 шт.
+  @mixin field-range-slider-thumb {
+    box-sizing: border-box;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid darken($gray-base, 20%);
+    border-radius: 17px;
+    cursor: ew-resize;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    background-image: radial-gradient(at center, $color-main 25%, #ffffff 25%);
+  }
+
+  @mixin field-range-slider-thumb--hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  @mixin field-range-slider-thumb--active {
+    border: 2px solid $color-main;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-slider-thumb {
+    @include field-range-slider-thumb; // локальная примесь
+    margin-top: -14px;
+
+    &:hover {
+      @include field-range-slider-thumb--hover; // локальная примесь
+    }
+
+    &:active {
+      @include field-range-slider-thumb--active; // локальная примесь
+    }
+  }
+
+  &::-moz-range-thumb {
+    @include field-range-slider-thumb; // локальная примесь
+
+    &:hover {
+      @include field-range-slider-thumb--hover; // локальная примесь
+    }
+
+    &:active {
+      @include field-range-slider-thumb--active; // локальная примесь
+    }
+  }
+
+  &::-ms-thumb {
+    @include field-range-slider-thumb; // локальная примесь
+
+    &:hover {
+      @include field-range-slider-thumb--hover; // локальная примесь
+    }
+
+    &:active {
+      @include field-range-slider-thumb--active; // локальная примесь
+    }
+  }
+
+  &::-ms-fill-lower,
+  &::-ms-tooltip {
+    display: none;
+  }
+}

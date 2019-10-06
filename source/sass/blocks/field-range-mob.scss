@@ -1,0 +1,64 @@
+.field-range-mob {
+  outline: 1px dotted red;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.field-range-mob__wrap {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border: 1px solid darken($gray--dark, 12%);
+  border-radius: 6px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 6px;
+    background: $color-main;
+    border-radius: 3px;
+  }
+
+  &--width-runnable {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 6px;
+      transform: translateY(-50%);
+      width: 70px;
+      height: 6px;
+      background: $color-main;
+      border-radius: 3px;
+    }
+  }
+}
+
+.field-range-mob__btn-before,
+.field-range-mob__btn-after {
+  outline: 1px dotted blue;
+
+  position: absolute;
+  top: -110%;
+
+  font-size: $font-size--larger;
+  text-transform: uppercase;
+  color: $gray--darkest;
+  background-color: transparent;
+}
+
+.field-range-mob__btn-before {
+  right: 100px;
+}
+
+.field-range-mob__btn-after {
+  left: 100px;
+}
