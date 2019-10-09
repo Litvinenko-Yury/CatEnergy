@@ -1,5 +1,4 @@
 .catalog {
-  background: #a5e0dd;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -8,18 +7,21 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
     padding-right: 0;
     padding-left: 0;
   }
 
   &--second {
-    padding-right: 0;
-    padding-left: 0;
-    overflow: hidden;
+    width: 100%;
+    //overflow: hidden;
   }
 }
 
 .catalog__wrap {
+  padding-left: 0;
+
   @media (min-width: $tablet-width) {
     outline: 3px dotted yellow;
 
@@ -36,12 +38,9 @@
   &--second {
     display: block;
 
-    padding-top: 20px;
-    padding-right: 30px;
-    padding-left: 30px;
-
     @media (min-width: $desktop-width) {
       display: flex;
+      margin-bottom: 85px;
       padding: 0;
     }
   }

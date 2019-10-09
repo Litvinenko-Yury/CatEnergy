@@ -115,7 +115,6 @@
 
   @media (min-width: $desktop-width) {
     font-size: $font-size--x-large;
-    color: #ffffff;
   }
 
   &:hover,
@@ -125,6 +124,12 @@
 
   &:active {
     color: darken(#ffffff, 35%);
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
   }
 
   &--active {

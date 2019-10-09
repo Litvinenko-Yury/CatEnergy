@@ -1,30 +1,40 @@
 .declaration {
-  min-height: 289px;
-  margin-bottom: 35px;
-  padding-top: 65px;
+  min-height: 60px;
+  margin: 0 20px 35px 20px;
+  padding: 65px 50px 45px 50px;
   background-color: $color-main;
   background-image: url("../img/bg-declaration-mob@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-
-    margin-top: 70px;
-    margin-bottom: 75px;
-    padding-top: 0;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img//bg-declaration-mob@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
-    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 30px 75px 30px;
+    padding: 60px 90px 70px 105px;
+    background-image: url("../img/bg-declaration-tab@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-declaration-tab@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
-    width: 225px;
+    flex-direction: column;
+    width: 245px;
+    margin: 0;
+    padding: 65px 40px 45px 40px;
+    background-image: url("../img/bg-declaration-desk@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-declaration-desk@2x.jpg");
+    }
   }
 }
 
@@ -35,16 +45,25 @@
   background: #000000;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 
 .declaration__text {
   margin: 0 auto;
-  width: 170px;
+  font-size: $font-size--larger;
+  line-height: 1.25em;
+  font-family: $font-family-second;
+  color: #ffffff;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 180px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }

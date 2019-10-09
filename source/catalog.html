@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preload" href="fonts/oswald-v25-latin_cyrillic-regular.woff2" as="font">
-  <link rel="preload" href="fonts/oswald-v25-latin_cyrillic-500.woff2" as="font">
+  <!-- <link rel="preload" href="fonts/oswald-v25-latin_cyrillic-regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald-v25-latin_cyrillic-500.woff2" as="font"> -->
   <link rel="stylesheet" href="css/style.min.css">
-  <script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=9bda3bf4-b0e3-42f6-bcda-4baf508132ae&lang=ru_RU"></script>
+  <!-- <script>
     document.createElement("picture");
   </script>
-  <script src="js/picturefill.min.js" async></script>
+  <script src="js/picturefill.min.js" async></script> -->
 </head>
 
 <body>
@@ -69,8 +70,8 @@
     <section class="catalog">
       <h1 class="title">Каталог продукции</h1>
 
-      <div class="catalog__wrap">
-        <article class="card" id="pro">
+      <ul class="catalog__wrap">
+        <li class="card" id="pro">
           <div class="card__wrap">
             <picture>
               <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-500-chiken-tab@1x.png">
@@ -78,7 +79,7 @@
             </picture>
 
             <div class="card__body">
-              <h4 class="card__title">Cat Energy PRO 500 г</h4>
+              <h4 class="card__title">Cat Energy <br class="card__title-mob">PRO 500 г</h4>
               <p class="card__descr">
                 <span class="card__key">Объем</span>
                 <span class="card__value">500 г</span>
@@ -94,9 +95,9 @@
             </div>
           </div>
           <a href="#" class="btn card__buy">Заказать</a>
-        </article>
+        </li>
 
-        <article class="card">
+        <li class="card">
           <div class="card__wrap">
             <picture>
               <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-1000-chiken-tab@1x.png">
@@ -104,7 +105,7 @@
             </picture>
 
             <div class="card__body">
-              <h4 class="card__title">Cat Energy Pro 1000 г</h4>
+              <h4 class="card__title">Cat Energy <br class="card__title-mob"> Pro 1000 г</h4>
               <p class="card__descr">
                 <span class="card__key">Объем</span>
                 <span class="card__value">1000 г</span>
@@ -120,9 +121,9 @@
             </div>
           </div>
           <a href="#" class="btn card__buy">Заказать</a>
-        </article>
+        </li>
 
-        <article class="card">
+        <li class="card">
           <div class="card__wrap">
             <picture>
               <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-500-fish-tab@1x.png">
@@ -130,7 +131,7 @@
             </picture>
 
             <div class="card__body">
-              <h4 class="card__title">Cat Energy PRO 500 г</h4>
+              <h4 class="card__title">Cat Energy <br class="card__title-mob"> PRO 500 г</h4>
               <p class="card__descr">
                 <span class="card__key">Объем</span>
                 <span class="card__value">500 г</span>
@@ -146,9 +147,9 @@
             </div>
           </div>
           <a href="#" class="btn card__buy">Заказать</a>
-        </article>
+        </li>
 
-        <article class="card">
+        <li class="card">
           <div class="card__wrap">
             <picture>
               <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-1000-fish-tab@1x.png">
@@ -156,7 +157,7 @@
             </picture>
 
             <div class="card__body">
-              <h4 class="card__title">Cat Energy Pro 1000 г</h4>
+              <h4 class="card__title">Cat Energy <br class="card__title-mob"> Pro 1000 г</h4>
               <p class="card__descr">
                 <span class="card__key">Объем</span>
                 <span class="card__value">1000 г</span>
@@ -172,9 +173,9 @@
             </div>
           </div>
           <a href="#" class="btn card__buy">Заказать</a>
-        </article>
+        </li>
 
-        <article class="card"  id="slim">
+        <li class="card" id="slim">
           <div class="card__wrap">
             <picture>
               <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-500-buckwheat-tab@1x.png">
@@ -182,7 +183,7 @@
             </picture>
 
             <div class="card__body">
-              <h4 class="card__title">Cat Energy SLIM 500 г</h4>
+              <h4 class="card__title">Cat Energy <br class="card__title-mob"> SLIM 500 г</h4>
               <p class="card__descr">
                 <span class="card__key">Объем</span>
                 <span class="card__value">500 г</span>
@@ -198,9 +199,9 @@
             </div>
           </div>
           <a href="#" class="btn card__buy">Заказать</a>
-        </article>
+        </li>
 
-        <article class="card">
+        <li class="card">
           <div class="card__wrap">
             <picture>
               <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-1000-buckwheat-tab@1x.png">
@@ -208,7 +209,7 @@
             </picture>
 
             <div class="card__body">
-              <h4 class="card__title">Cat Energy SLIM 1000 г</h4>
+              <h4 class="card__title">Cat Energy <br class="card__title-mob"> SLIM 1000 г</h4>
               <p class="card__descr">
                 <span class="card__key">Объем</span>
                 <span class="card__value">1000 г</span>
@@ -224,9 +225,9 @@
             </div>
           </div>
           <a href="#" class="btn card__buy">Заказать</a>
-        </article>
+        </li>
 
-        <article class="card">
+        <li class="card">
           <div class="card__wrap">
             <picture>
               <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-500-rice-tab@1x.png">
@@ -234,7 +235,7 @@
             </picture>
 
             <div class="card__body">
-              <h4 class="card__title">Cat Energy SLIM 500 г</h4>
+              <h4 class="card__title">Cat Energy <br class="card__title-mob"> SLIM 500 г</h4>
               <p class="card__descr">
                 <span class="card__key">Объем</span>
                 <span class="card__value">500 г</span>
@@ -250,16 +251,16 @@
             </div>
           </div>
           <a href="#" class="btn card__buy">Заказать</a>
-        </article>
+        </li>
 
-        <article class="card  card--last">
+        <li class="card  card--last">
           <div class="card__body  card__body--last">
             <h4 class="card__title">Показать еще 100500 товаров</h4>
             <p class="card__descr  card__descr--last">На самом деле вкусов гораздо больше!</p>
           </div>
-          <a href="#" class="btn card__buy">Показать все</a>
-        </article>
-      </div>
+          <a href="#!" class="btn card__buy  card__buy--last">Показать все</a>
+        </li>
+      </ul>
     </section>
 
     <section class="catalog  catalog--second">
@@ -271,61 +272,59 @@
 
       <div class="catalog__wrap  catalog__wrap--second">
 
-        <div class="card__container-second">
-          <article class="card  card--second">
+        <ul class="card__container-second">
+          <li class="card  card--second">
             <div class="card__wrapper  card__wrapper--second">
               <div class="card__box-second">
                 <h4 class="card__title  card__title--second">Сахарозаменитель</h4>
                 <p class="card__descr  card__descr--second">
                   <span class="card__key">1 упаковка (100 г)</span>
-                  <span class="card__value">200 Р.</span>
+                  <span class="card__value  card__value--second">200 Р.</span>
                 </p>
               </div>
               <a href="#" class="btn card__buy">Заказать</a>
             </div>
-          </article>
+          </li>
 
-          <article class="card  card--second">
+          <li class="card  card--second">
             <div class="card__wrapper  card__wrapper--second">
               <div class="card__box-second">
                 <h4 class="card__title  card__title--second">Питьевая вода</h4>
                 <p class="card__descr  card__descr--second">
                   <span class="card__key">5 литров</span>
-                  <span class="card__value">50 Р.</span>
+                  <span class="card__value  card__value--second"> 50 Р.</span>
                 </p>
               </div>
               <a href="#" class="btn card__buy">Заказать</a>
             </div>
-          </article>
+          </li>
 
-          <article class="card  card--second">
+          <li class="card  card--second">
             <div class="card__wrapper  card__wrapper--second">
               <div class="card__box-second">
-                <div class="card__box-second">
-                  <h4 class="card__title  card__title--second">Молоко</h4>
-                  <p class="card__descr  card__descr--second">
-                    <span class="card__key">1 литр</span>
-                    <span class="card__value">100 Р.</span>
-                  </p>
-                </div>
+                <h4 class="card__title  card__title--second">Молоко</h4>
+                <p class="card__descr  card__descr--second">
+                  <span class="card__key">1 литр</span>
+                  <span class="card__value  card__value--second">100 Р.</span>
+                </p>
               </div>
               <a href="#" class="btn card__buy">Заказать</a>
             </div>
-          </article>
+          </li>
 
-          <article class="card  card--second">
+          <li class="card  card--second">
             <div class="card__wrapper  card__wrapper--second  card__wrapper--last">
               <div class="card__box-second">
                 <h4 class="card__title  card__title--second">Витамины</h4>
                 <p class="card__descr  card__descr--second">
                   <span class="card__key">1 упаковка (30 г)</span>
-                  <span class="card__value">300 Р.</span>
+                  <span class="card__value  card__value--second">300 Р.</span>
                 </p>
               </div>
               <a href="#" class="btn card__buy">Заказать</a>
             </div>
-          </article>
-        </div>
+          </li>
+        </ul>
 
         <div class="declaration">
           <svg class="declaration__logo" width="55" height="60" aria-hidden="true" role="presentation">
@@ -395,6 +394,7 @@
   <!-- <script src="js/ofi.min.js"></script>
   <script>objectFitImages();</script> -->
   <script src="js/script.js"></script>
+  <!-- <script src="js/script-map.js" async></script> -->
 </body>
 
 </html>

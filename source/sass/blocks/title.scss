@@ -1,14 +1,23 @@
 .title {
   display: block;
-  margin-bottom: 20px;
-  padding-right: 10px;
-  padding-left: 10px;
-  color: #ffffff;
+  padding: 20px 20px 35px 20px;
+  line-height: $line-height-large;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
     padding: 0;
     font-size: $font-size-h1 + 24px;
     color: $gray--darkest;
+  }
+
+  &--index {
+    margin-bottom: 20px;
+    padding: 0;
+    line-height: 1em;
+    color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      color: $gray--darkest;
+    }
   }
 }

@@ -1,8 +1,12 @@
 .card {
   position: relative;
+  margin-right: 3px;
+  margin-bottom: -1px;
+  margin-left: 3px;
   padding: 20px;
-  background: $gray-base;
-  border: 2px solid coral;
+  list-style: none;
+  border: 1px solid $gray-base;
+  background: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -35,7 +39,7 @@
       transform: translateX(-50%);
       width: 30px;
       height: 2px;
-      background: #000000;
+      background: darken($gray-base, 12%);
     }
 
     &::after {
@@ -47,21 +51,25 @@
       transform: translateX(-50%);
       width: 2px;
       height: 30px;
-      background: #000000;
+      background: darken($gray-base, 12%);
     }
   }
 
   &--second {
     padding: 0 20px 0 20px;
+    border: none;
 
     @media (min-width: $tablet-width) {
       width: 100%;
       margin-top: 0;
+      border: 1px solid darken($gray-base, 15%);
     }
 
     @media (min-width: $desktop-width) {
       width: 895px;
       padding: 0;
+      border-left: none;
+      border-right: none;
     }
   }
 }
@@ -80,9 +88,9 @@
 
 /*обертка для задания border-top и border-bottom для .card--second*/
 .card__wrapper {
-  border-top: 1px solid red;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-top: 1px solid darken($gray-base, 15%);
 
   &--second {
     @media (min-width: $tablet-width) {
@@ -92,12 +100,13 @@
     @media (min-width: $desktop-width) {
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
   }
 
   &--last {
     margin-bottom: 40px;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid darken($gray-base, 15%);
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
@@ -146,34 +155,59 @@
 
   &--last {
     width: 100%;
+    margin-bottom: 22px;
     text-align: center;
   }
 }
 
 /*обертка для сетки на $desktop-width, для группировки .card--second*/
+/* stylelint-disable-next-line*/
 .card__container-second {
+  padding-left: 0;
+  
+  @media (min-width: $tablet-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 
 .card__box-second {
-  outline: 2px dotted black;
+  //outline: 1px dotted black;
+
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 610px;
+    padding: 0;
   }
 }
 
 .card__title {
+  margin-bottom: 18px;
+  line-height: 1.25em;
+  color: $gray--darkest;
+  text-transform: uppercase;
+
   @media (min-width: $tablet-width) {
+    font-size: $font-size--x-large;
     text-align: center;
   }
 
   &--second {
+    color: $gray--darkenest;
+
     @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+
       text-align: left;
     }
 
@@ -184,25 +218,79 @@
   }
 }
 
+.card__title-mob {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .card__descr {
   outline: 1px dotted green;
+
   display: flex;
   justify-content: space-between;
 
+  margin-bottom: 5px;
+  font-family: $font-family-second;
+  font-size: $font-size--smaller;
+  line-height: 1.33em;
+  color: $gray--darken;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--larger;
+    line-height: 1em;
+  }
+
   &--last {
     display: block;
+    margin-bottom: 0;
   }
 
   &--second {
-    width: 285px;
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 285px;
+    }
+  }
+}
+
+.card__value {
+  &--second {
+    @media (min-width: $tablet-width) {
+      width: 70px;
+      margin-left: 25px;
+      text-align: right;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: auto;
+      margin-left: 0;
+      text-align: left;
+    }
   }
 }
 
 .card__buy {
   width: 100%;
-  bottom: 24px;
+  font-size: $font-size--larger;
 
   @media (min-width: $desktop-width) {
     width: 245px;
+  }
+
+  &--last {
+    color: $gray--darken;
+    background: $gray-base;
+
+    &:hover {
+      background: darken($gray-base, 3%);
+    }
+
+    &:active {
+      color: darken($gray-base, 25%);
+    }
   }
 }

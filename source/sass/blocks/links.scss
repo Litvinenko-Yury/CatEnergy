@@ -1,12 +1,9 @@
 .links {
   outline: 1px dotted green;
-}
 
-.links__academy-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
 
   &:active {
     opacity: 0.3;
