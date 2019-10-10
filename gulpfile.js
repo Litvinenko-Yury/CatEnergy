@@ -70,9 +70,9 @@ gulp.task("svg_sprite", function () {
 //инклюдим svg-спрайт в разметку html-файла
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    /* .pipe(posthtml([
+    .pipe(posthtml([
       include()
-    ])) */
+    ]))
     .pipe(gulp.dest("build"));
 });
 

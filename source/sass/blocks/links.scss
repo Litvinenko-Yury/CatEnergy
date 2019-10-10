@@ -1,13 +1,19 @@
 .links {
   outline: 1px dotted green;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.links__academy-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .links__academy-title {
@@ -20,5 +26,4 @@
 
 .links__academy-logo {
   display: block;
-  background: #000000;
 }

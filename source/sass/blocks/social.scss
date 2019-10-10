@@ -15,8 +15,13 @@
   border-bottom: 1px solid darken($gray--dark, 8%);
 
   @media (min-width: $tablet-width) {
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    //border-top: 1px solid transparent;
+    //border-bottom: 1px solid transparent;
+    border-top: none;
+    border-bottom: none;
   }
 }
 
@@ -38,6 +43,10 @@
   display: block;
   width: 16px;
   height: 16px;
-  fill: #ffffff;
-  background: #000000;
+  fill: red;
+
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
 }

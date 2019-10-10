@@ -229,6 +229,8 @@
 
   width: 280px;
   height: 240px;
+  object-fit: cover;
+  font-family: "object-fit: cover;"; /* stylelint-disable-line */
 
   @media (min-width: $tablet-width) {
     width: 354px;

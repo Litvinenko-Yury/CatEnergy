@@ -21,12 +21,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    border-bottom: none;
   }
 }
 
 .main-nav__inner-logo-img {
-  background: #000000;
-
   @media (min-width: $tablet-width) {
     display: none;
   }
