@@ -1,15 +1,100 @@
 .field-radio {
-  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
+
   border: none;
 
-  border: 2px solid coral;
-
-  &--wrap-inner {
-    @media (min-width: $desktop-width) {
-      width: 570px;
-    }
+  @media (min-width: $tablet-width) {
+    border: 1px solid $input-border-base;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 25px;
+  }
+
+  //border: 2px solid coral;
+
+  // &--wrap-inner {
+  //   width: 570px;
+  //  }
+}
+
+.field-radio__name-text {
+  font-size: $font-size--larger;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: $gray--darkenest;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--x-large;
+  }
+}
+
+/*===стилизация radio===*/
+.field-radio__input {
+  /*прячем стандартный radio без потери доступности*/
+  position: absolute;
+  opacity: 0;
+}
+
+.field-radio__label {
+  /*подготовка места для кастом-radio = стилизация label*/
+
+  outline: 1px dotted red;
+  position: relative;
+  display: block;
+  margin-bottom: 12px;
+  padding: 8px 0 8px 45px;
+  cursor: pointer;
+}
+
+.field-radio__name-text::before {
+  /*стилизация фона radio*/
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid $input-border-base;
+  border-radius: 50%;
+  background: #ffffff;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.field-radio__name-text:hover::before {
+  border-color: $input-border-hover;
+}
+
+.field-radio__name-text:active::before {
+  border-color: $input-border-active;
+}
+
+/*переключение состояния radio*/
+.field-radio__input:checked ~ .field-radio__name-text::after {
+  /*стилизация активного radio*/
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $color-main;
+  position: absolute;
+  top: 11px;
+  left: 9px;
+
+  @media (min-width: $tablet-width) {
+    top: 13px;
+  }
+}
+
+.field-radio__input:checked ~ .field-radio__name-text:active::after {
+  /*radio button down*/
+  opacity: 0.3;
+}
+
+.field-radio__input:checked ~ .field-radio__name-text:active {
+  /*radio button down*/
+  opacity: 0.3;
 }

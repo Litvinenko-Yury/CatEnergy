@@ -5,13 +5,14 @@
   <meta charset="utf-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="preload" href="fonts/oswald-v25-latin_cyrillic-regular.woff2" as="font">
-  <link rel="preload" href="fonts/oswald-v25-latin_cyrillic-500.woff2" as="font">
+  <!-- <link rel="preload" href="fonts/oswald-v25-latin_cyrillic-regular.woff2" as="font">
+  <link rel="preload" href="fonts/oswald-v25-latin_cyrillic-500.woff2" as="font"> -->
   <link rel="stylesheet" href="css/style.min.css">
-  <script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=9bda3bf4-b0e3-42f6-bcda-4baf508132ae&lang=ru_RU"></script> -->
+  <!-- <script>
     document.createElement("picture");
   </script>
-  <script src="js/picturefill.min.js" async></script>
+  <script src="js/picturefill.min.js" async></script> -->
 </head>
 
 <body>
@@ -93,7 +94,7 @@
         <fieldset class="field-radio  field-radio--wrap-inner">
           <div class="field-radio__input-wrap">
             <label class="field-radio__label">
-              <input class="field-radio__input" type="radio" name="radio-field" value="+">
+              <input class="field-radio__input" type="radio" name="radio-field" value="+" checked>
               <span class="field-radio__name-text">Похудение</span>
             </label>
           </div>
@@ -136,9 +137,9 @@
         </div>
       </div>
 
-      <fieldset class="field-text">
+      <fieldset class="field-text  field-text--textarea">
         <label class="field-text__label">
-            <textarea class="field-text__input" name="message" rows="5" placeholder="Расскажите обо всех повадках кота">Расскажите обо всех повадках кота</textarea>
+          <textarea class="field-text__input  field-text__input--textarea" name="message" rows="5" placeholder="Расскажите обо всех повадках кота">Расскажите обо всех повадках кота</textarea>
         </label>
       </fieldset>
 
@@ -151,7 +152,7 @@
       <div class="field-checkbox">
         <div class="field-checkbox__input-wrap">
           <label class="field-сheckbox__label">
-            <input class="field-сheckbox__input" type="checkbox" name="checkbox-field1" value="Сахарозаменитель" checked="">
+            <input class="field-сheckbox__input" type="checkbox" name="checkbox-field1" value="Сахарозаменитель" checked>
             <span class="field-checkbox__name-text">Сахарозаменитель</span>
           </label>
         </div>
@@ -180,7 +181,7 @@
 
       <div class="field-actions">
         <button class="btn  field-actions--btn" type="submit">Отправить заявку</button>
-        <span class="field-actions__text">* — обязательные поля</span>
+        <span class="field-actions__text">* — Обязательные поля</span>
       </div>
     </form>
 
@@ -188,7 +189,10 @@
       <div class="banner  banner--theme-catalog">
         <div class="banner__wrap">
           <span class="banner__title">ПРИГЛАШАЕМ К СОТРУДНИЧЕСТВУ ДИЛЕРОВ!</span>
-          <p class="banner__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="banner__text">ул. Большая Конюшенная, д. 19/8
+            <span class="banner__line-empty">&nbsp;</span>
+            Санкт-Петербург
+          </p>
         </div>
       </div>
       <div id="map" class="map"></div>
@@ -239,9 +243,10 @@
     </div>
   </footer>
 
-  <script src="js/ofi.min.js"></script>
-  <script>objectFitImages();</script>
+  <!-- <script src="js/ofi.min.js"></script>
+  <script>objectFitImages();</script> -->
   <script src="js/script.js"></script>
+  <!-- <script src="js/script-map.js" async></script> -->
 </body>
 
 </html>

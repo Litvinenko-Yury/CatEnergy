@@ -1,13 +1,14 @@
 .title {
   display: block;
-  padding: 20px 20px 35px 20px;
+  padding: 20px 20px 20px 20px;
   line-height: $line-height-large;
+  color: $gray--darkest;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
     padding: 0;
     font-size: $font-size-h1 + 24px;
-    color: $gray--darkest;
+    line-height: 1em;
   }
 
   &--index {

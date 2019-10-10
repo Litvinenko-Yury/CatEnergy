@@ -45,11 +45,3 @@
     }
   }
 }
-
-/*нужен для ограничения ширины и позиционирвания слева .caption__title на $width-desktop*/
-.caption {
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}

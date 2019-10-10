@@ -128,9 +128,12 @@ $btn-border-color-hover: #989898;
 //===Input===
 //=============================
 $input-border-base: #e6e6e6;
-$input-border-hover: #e6e6e6;
-$input-border-active: #444444;
+$input-border-hover: #cdcdcd;
+$input-border-focus: #444444;
 $input-border-error: #ff8282;
+$input-border-active: #ebebeb; //radio button down
+
+$radio-active: #d1e9c3; //radio button down
 
 //=============================
 //===Media queries breakpoints===

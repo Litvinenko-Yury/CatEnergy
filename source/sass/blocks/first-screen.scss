@@ -116,6 +116,7 @@
   height: 270px;
   margin-bottom: 5px;
   object-fit: contain;
+  font-family: "object-fit: contain;"; /* stylelint-disable-line */
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -135,6 +136,7 @@
 
     margin-top: -80px;
     object-fit: contain;
+    ont-family: "object-fit: contain;"; /* stylelint-disable-line */
   }
 
   @media (min-width: $desktop-width) {

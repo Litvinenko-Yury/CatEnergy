@@ -1,22 +1,28 @@
 .field-actions {
   outline: 2px dotted coral;
 
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-
   display: flex;
   flex-direction: column;
+
+  padding: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
+
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   &--btn {
+    margin-bottom: 20px;
+
     @media (min-width: $tablet-width) {
       width: 282px;
+      margin-bottom: 0;
+      font-size: $font-size--x-large;
+      padding-top: $btn-padding-vertical + 4px;
+      padding-bottom: $btn-padding-vertical + 4px;
     }
 
     @media (min-width: $desktop-width) {
@@ -26,9 +32,13 @@
 }
 
 .field-actions__text {
+  font-family: $font-family-second;
+  line-height: $line-height;
   text-align: center;
+  color: $gray--darken;
 
   @media (min-width: $tablet-width) {
     width: 282px;
+    font-size: $font-size--larger;
   }
 }

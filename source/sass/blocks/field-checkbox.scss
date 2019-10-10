@@ -1,20 +1,25 @@
 .field-checkbox {
   outline: 2px dotted coral;
 
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .field-checkbox__input-wrap {
-  outline: 2px dotted red;
+  outline: 1px dotted red;
+
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -22,5 +27,84 @@
 
   @media (min-width: $desktop-width) {
     width: 285px;
+    margin-bottom: 0;
   }
+}
+
+.field-checkbox__name-text {
+  font-size: $font-size--larger;
+  text-transform: uppercase;
+  color: $gray--darkenest;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--x-large;
+    line-height: 1em;
+  }
+}
+
+/*===стилизация чек-бокс===*/
+.field-сheckbox__input {
+  /*прячем стандартный чек-бокс без потери доступности*/
+  position: absolute;
+  opacity: 0;
+}
+
+.field-сheckbox__label {
+  /*подготовка места для кастом-чек-бокса = стилизация label*/
+  position: relative;
+  display: block;
+
+  padding-left: 45px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.field-checkbox__name-text::before {
+  /*стилизация фона checkbox*/
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px solid $input-border-base;
+
+  background: #ffffff;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 2px;
+  }
+}
+
+.field-checkbox__name-text:hover::before {
+  border-color: $input-border-hover;
+}
+
+.field-checkbox__name-text:active::before {
+  border-color: $input-border-active;
+}
+
+/*переключение состояния чек-бокса*/
+.field-сheckbox__input:checked ~ .field-checkbox__name-text::after {
+  /*стилизация активного чек-бокса*/
+  content: "";
+  width: 21px;
+  height: 16px;
+  background: url("../img/icon-tick.svg") no-repeat center;
+
+  position: absolute;
+  top: 7px;
+  left: 4px;
+}
+
+.field-сheckbox__input:checked ~ .field-сheckbox__name-text:active::after {
+  /*radio button down*/
+  opacity: 0.3;
+}
+
+.field-сheckbox__input:checked ~ .field-сheckbox__name-text:active {
+  /*radio button down*/
+  opacity: 0.3;
 }

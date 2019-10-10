@@ -1,11 +1,21 @@
 .field-text {
-  outline: 5px dotted coral;
+  outline: 1px dotted coral;
 
-  padding-top: 20px;
+  margin-bottom: 20px;
+
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 20px;
+
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 
   &--wrap-inner {
     display: flex;
@@ -20,16 +30,42 @@
     display: flex;
     flex-direction: column;
 
+    @media (min-width: $tablet-width) {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
     @media (min-width: $desktop-width) {
       flex-direction: row;
       justify-content: space-between;
+
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  &--textarea {
+    @media (min-width: $tablet-width) {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }
 
 .field-text__label {
-  outline: 2px dotted green;
+  outline: 1px dotted green;
   display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &--email {
     @media (min-width: $desktop-width) {
@@ -38,6 +74,47 @@
   }
 }
 
+.field-text__name {
+  margin-right: 15px;
+  font-size: $font-size--larger;
+  color: $gray--darkenest;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--x-large;
+  }
+}
+
 .field-text__input {
   flex-grow: 1;
+  padding: 15px;
+  font-size: $font-size--larger;
+  line-height: 1em;
+  color: $gray--darken;
+  text-transform: uppercase;
+  border: 1px solid $input-border-base;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--x-large;
+  }
+
+  &:hover {
+    border-color: $input-border-hover;
+  }
+
+  &:focus {
+    border-color: $input-border-focus;
+    outline: 1px solid $input-border-focus;
+  }
+
+  &--error {
+    border-color: $input-border-error;
+    outline: 1px solid $input-border-error;
+  }
+
+  &--textarea {
+    @media (min-width: $tablet-width) {
+      line-height: 1.5em;
+    }
+  }
 }

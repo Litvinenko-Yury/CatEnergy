@@ -1,5 +1,6 @@
 .form {
   margin-bottom: 20px;
+  color: $gray--darkest;
 
   @media (min-width: $tablet-width) {
     width: $content-width--tablet;
@@ -12,15 +13,32 @@
 }
 
 .form__subtitle {
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
+  color: $gray--darkest;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    padding-right: 0;
+    padding-left: 40px;
+    font-size: $font-size--x-large;
+    line-height: 1.5;
+  }
 }
 
 .form__field-wrap {
-  outline: 3px solid black;
+  //outline: 3px solid black;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 50px;
   }
 }

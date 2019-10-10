@@ -123,6 +123,7 @@
   width: 140px;
   height: 144px;
   object-fit: cover;
+  font-family: "object-fit: contain;"; /* stylelint-disable-line */
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -164,7 +165,7 @@
 /* stylelint-disable-next-line*/
 .card__container-second {
   padding-left: 0;
-  
+
   @media (min-width: $tablet-width) {
     padding-right: 30px;
     padding-left: 30px;

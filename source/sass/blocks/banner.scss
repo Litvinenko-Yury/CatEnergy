@@ -45,6 +45,7 @@
   width: 125px;
   font-size: $font-size--larger;
   line-height: 1.25em;
+  color: $gray--darkest;
 
   @media (min-width: $tablet-width) {
     width: 200px;
