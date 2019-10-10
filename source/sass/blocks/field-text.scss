@@ -72,6 +72,12 @@
       width: 570px;
     }
   }
+
+  &--tel {
+    @media (min-width: $desktop-width) {
+      width: 570px;
+    }
+  }
 }
 
 .field-text__name {
@@ -93,6 +99,7 @@
   color: $gray--darken;
   text-transform: uppercase;
   border: 1px solid $input-border-base;
+  background: transparent;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size--x-large;
