@@ -42,10 +42,18 @@
   display: block;
   width: 16px;
   height: 16px;
-  fill: red;
+  fill: darken($gray-base, 55%);
 
   @media (min-width: $tablet-width) {
     width: 23px;
     height: 23px;
+  }
+
+  &:hover {
+    fill: $color-main;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

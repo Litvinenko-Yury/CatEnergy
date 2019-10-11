@@ -25,10 +25,12 @@
   &:hover {
     outline: none;
     border-bottom: 1px solid darken($gray--dark, 35%);
+    background-color: transparent;
   }
 
   &:active {
     border-bottom: 1px solid transparent;
+    background-color: transparent;
   }
 }
 

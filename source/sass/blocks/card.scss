@@ -284,14 +284,14 @@
 
   &--last {
     color: $gray--darken;
-    background: $gray-base;
+    background: $btn-bg-second;
 
     &:hover {
-      background: darken($gray-base, 3%);
+      background: $btn-bg-hover--second;
     }
 
     &:active {
-      color: darken($gray-base, 25%);
+     
     }
   }
 }

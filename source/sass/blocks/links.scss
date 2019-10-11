@@ -1,10 +1,6 @@
 .links {
   outline: 1px dotted green;
 
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-
   &:active {
     opacity: 0.3;
   }
@@ -14,6 +10,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .links__academy-title {
@@ -26,4 +26,9 @@
 
 .links__academy-logo {
   display: block;
+  fill: $gray--darken;
+
+  &:hover {
+    fill: $color-main;
+  }
 }

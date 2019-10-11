@@ -68,12 +68,16 @@
   }
 
   &--email {
+    position: relative;
+
     @media (min-width: $desktop-width) {
       width: 570px;
     }
   }
 
   &--tel {
+    position: relative;
+
     @media (min-width: $desktop-width) {
       width: 570px;
     }
@@ -94,6 +98,7 @@
 .field-text__input {
   flex-grow: 1;
   padding: 15px;
+  padding-right: 40px;
   font-size: $font-size--larger;
   line-height: 1em;
   color: $gray--darken;
@@ -114,6 +119,10 @@
     outline: 1px solid $input-border-focus;
   }
 
+  &:focus + .field-text__input-svg {
+    fill: $color-main;
+  }
+
   &--error {
     border-color: $input-border-error;
     outline: 1px solid $input-border-error;
@@ -123,5 +132,21 @@
     @media (min-width: $tablet-width) {
       line-height: 1.5em;
     }
+  }
+}
+
+.field-text__input-svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  fill: $gray--darken;
+
+  &--tel {
+    right: 10px;
+  }
+
+  &--error {
+    fill: $input-border-error;
   }
 }

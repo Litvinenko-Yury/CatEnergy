@@ -24,7 +24,7 @@
     <div class="page-header__wrap">
       <nav class="main-nav">
         <div class="main-nav__inner">
-          <a class="main-nav__inner-logo">
+          <a class="main-nav__inner-logo" href="index.html">
             <svg class="main-nav__inner-logo-img" width="33" height="38" role="img">
               <title>Логотип CAT ENERGY</title>
               <use xlink:href="#icon-logo-mobile" />
@@ -59,7 +59,7 @@
             <a class="main-nav__link" href="catalog.html">КАТАЛОГ ПРОДУКЦИИ</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#!">ПОДБОР ПРОГРАММЫ</a>
+            <a class="main-nav__link  main-nav__link--active" href="#!">ПОДБОР ПРОГРАММЫ</a>
           </li>
         </ul>
       </nav>
@@ -67,7 +67,7 @@
   </header>
 
   <main class="page-main">
-    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form" action="https://echo.htmlacademy.ru" method="post" novalidate>
       <h1 class="title">Подбор программы</h1>
       <p class="form__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
@@ -76,17 +76,17 @@
 
           <label class="field-text__label">
             <span class="field-text__name">Имя:*</span>
-            <input class="field-text__input" type="text" name="text" placeholder="Барсик">
+            <input class="field-text__input  field-text__input--1" type="text" name="text" placeholder="Барсик">
           </label>
 
           <label class="field-text__label">
             <span class="field-text__name">Вес (кг):*</span>
-            <input class="field-text__input" type="text" name="text" placeholder="7">
+            <input class="field-text__input  field-text__input--2" type="text" name="text" placeholder="7">
           </label>
 
           <label class="field-text__label">
             <span class="field-text__name">Возраст (лет):</span>
-            <input class="field-text__input" type="text" name="text" placeholder="7">
+            <input class="field-text__input   field-text__input--3" type="text" name="text" placeholder="7">
           </label>
 
         </fieldset>
@@ -123,14 +123,17 @@
         <label class="field-text__label  field-text__label--email">
           <span class="field-text__name">E-mail:*</span>
           <input class="field-text__input" type="email" name="email" placeholder="kuklachev@gmail.com">
-          <svg width="17" height="13" aria-hidden="true" и role="presentation">
-            <use xlink:href="#icon-phone" />
+          <svg class="field-text__input-svg  field-text__input-svg--email" width="17" height="13" aria-hidden="true" и role="presentation">
+            <use xlink:href="#icon-mail" />
           </svg>
         </label>
 
         <label class="field-text__label  field-text__label--tel">
           <span class="field-text__name">Телефон</span>
-          <input class="field-text__input" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+          <input class="field-text__input" type="tel" name="tel" placeholder="8 (960) 900-60-90" pattern="^[ 0-9]+$">
+          <svg class="field-text__input-svg  field-text__input-svg--tel" width="20" height="20" aria-hidden="true" и role="presentation">
+            <use xlink:href="#icon-phone" />
+          </svg>
         </label>
       </div>
 
@@ -142,7 +145,7 @@
 
       <fieldset class="field-text  field-text--textarea">
         <label class="field-text__label">
-          <textarea class="field-text__input  field-text__input--textarea" name="message" rows="5" placeholder="Расскажите обо всех повадках кота">Расскажите обо всех повадках кота</textarea>
+          <textarea class="field-text__input  field-text__input--textarea" name="message" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </fieldset>
 
@@ -215,14 +218,14 @@
         <li class="social__link-wrap" title="ВКонтакте">
           <a class="social__link" href="https://vk.com/" rel="noopener" aria-label="Переход на сайт ВКонтакте">
             <svg width="16" height="16" role="img">
-              <use xlink:href="#icon-vk-mobile"></use>
+              <use xlink:href="#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__link-wrap" title="instagram">
           <a class="social__link" href="https://www.instagram.com/" rel="noopener" aria-label="Переход на сайт instagram">
             <svg width="16" height="16" role="img">
-              <use xlink:href="#icon-insta-mobile"></use>
+              <use xlink:href="#icon-insta"></use>
             </svg>
           </a>
         </li>
@@ -249,6 +252,7 @@
   <!-- <script src="js/ofi.min.js"></script>
   <script>objectFitImages();</script> -->
   <script src="js/script.js"></script>
+  <script src="js/script-form-valid.js"></script>
   <!-- <script src="js/script-map.js" async></script> -->
 </body>
 

@@ -53,6 +53,11 @@
   text-transform: uppercase;
   color: $gray--darkest;
   background-color: transparent;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
 }
 
 .field-range-mob__btn-before {

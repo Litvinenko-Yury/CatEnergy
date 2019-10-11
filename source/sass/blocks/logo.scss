@@ -1,3 +1,11 @@
 .logo svg {
-  //background: #000000;
+  fill: $gray--darkest;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
