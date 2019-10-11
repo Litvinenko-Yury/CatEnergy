@@ -123,6 +123,10 @@
     fill: $color-main;
   }
 
+  &::placeholder {
+    color: $gray--darken;
+  }
+
   &--error {
     border-color: $input-border-error;
     outline: 1px solid $input-border-error;
