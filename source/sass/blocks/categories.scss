@@ -180,9 +180,11 @@
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
+  padding-right: $btn-padding-horizontal * 4.5;
   font-size: $font-size--larger;
   text-align: left;
   text-transform: uppercase;
+
   color: $gray--darkest;
 
   @media (min-width: $tablet-width) {
@@ -209,6 +211,9 @@
 
 .categories__card-link-text {
   position: relative;
+
+  display: block;
+  white-space: pre-wrap;
 
   @media (min-width: $tablet-width) {
     margin-right: 18px;

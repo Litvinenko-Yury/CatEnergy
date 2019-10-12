@@ -98,22 +98,30 @@
   }
 }
 
+.main-nav__item {
+  @media (min-width: $tablet-width) {
+    margin-left: 36px;
+  }
+}
+
 .main-nav__link {
   outline: 1px dotted green;
 
   position: relative;
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 20px 24px 20px;
+
   font-size: $font-size--x-large;
   font-weight: 500;
   line-height: 1em;
   text-align: center;
   color: $gray--darkest;
+
   border-bottom: 1px solid $input-border-base;
 
   @media (min-width: $tablet-width) {
-    margin-left: 36px;
+    padding-right: 0;
+    padding-left: 0;
     font-size: $font-size--large;
     font-weight: 400;
     color: $gray--darkenest;

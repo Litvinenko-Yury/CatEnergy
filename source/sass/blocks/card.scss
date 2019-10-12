@@ -207,6 +207,7 @@
     color: $gray--darkenest;
 
     @media (min-width: $tablet-width) {
+      max-width: 370px;
       margin-bottom: 0;
 
       text-align: left;
@@ -290,8 +291,8 @@
       background: $btn-bg-hover--second;
     }
 
-    &:active {
-     
-    }
+    // &:active {
+
+    // }
   }
 }

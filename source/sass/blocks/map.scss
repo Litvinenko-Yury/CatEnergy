@@ -5,17 +5,28 @@
   background-image: url("../img/bg-map-mob@1x.jpg");
   background-position: center bottom;
   background-size: cover;
-
   background-repeat: no-repeat;
   background-color: $color-map;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-mob@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     height: 396px;
     background-image: url("../img/bg-map-tab@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-tab@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     height: 400px;
     background-image: url("../img/bg-map-desk@1x.jpg");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-desk@2x.jpg");
+    }
   }
 }

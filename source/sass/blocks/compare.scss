@@ -17,6 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     display: flex;
     justify-content: space-between;
 
@@ -190,6 +191,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    // position: absolute;
+    // right: 0;
+    // bottom: 0;
     width: 690px;
   }
 }
