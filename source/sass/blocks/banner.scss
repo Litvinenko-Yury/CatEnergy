@@ -1,11 +1,11 @@
 .banner {
-  outline: 2px solid red;
+  outline: 1px solid red;
 
-  padding: 30px 20px;
+  padding: 30px 20px 25px 20px;
   background: #ffffff;
 
   @media (min-width: $tablet-width) {
-    padding: 65px 70px;
+    padding: 65px 70px 55px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,7 +15,7 @@
     left: 50%;
     transform: translateX(-$content-width--desktop / 2);
     width: 570px;
-    padding: 70px 77px 60px 77px;
+    padding: 65px 82px 60px 77px;
   }
 
   &--theme-catalog {

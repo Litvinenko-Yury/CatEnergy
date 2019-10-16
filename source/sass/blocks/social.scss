@@ -5,9 +5,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
+  margin-bottom: 20px;
   padding-left: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
   list-style: none;
 
@@ -15,6 +17,8 @@
   border-bottom: 1px solid darken($gray--dark, 8%);
 
   @media (min-width: $tablet-width) {
+    margin-right: -30px;
+    margin-bottom: 0;
     padding-top: 0;
     padding-bottom: 0;
 
@@ -24,21 +28,20 @@
 }
 
 .social__link-wrap {
-  margin-right: 10px;
+  margin-right: 25px;
 
   background-color: coral;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 15px;
+  }
 
   &:last-child {
     margin-right: 0;
   }
 }
 
-.social__link {
-  display: block;
-  padding: 5px;
-}
-
-.social svg {
+.social__link svg {
   display: block;
   width: 16px;
   height: 16px;
@@ -55,5 +58,20 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.social__link {
+  display: block;
+  padding: 5px;
+
+  &--vk svg {
+    width: 22px;
+    height: 12px;
+
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 16px;
+    }
   }
 }

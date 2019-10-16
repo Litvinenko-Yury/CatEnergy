@@ -1,13 +1,15 @@
 .advantages {
-  outline: 2px dotted red;
+  //outline: 1px dotted red;
 
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   padding-left: 20px;
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 55px;
     border-bottom: 1px solid darken($gray--dark, 3%);
   }
 
@@ -19,52 +21,70 @@
 }
 
 .advantages__title {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   line-height: $line-height-large;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+    font-size: $font-size-h1 + 24px;
+    line-height: 1em;
+  }
 }
 
 .advantages__wrap {
-  outline: 2px dotted red;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
+  margin: 0;
   padding-left: 0;
 
   @media (min-width: $tablet-width) {
-    padding-right: 90px;
+    width: 706px;
+    padding-right: 80px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
     padding-right: 0;
   }
 }
 
 .advantages__item {
-  outline: 2px dotted blue;
+  outline: 1px dotted blue;
 
   position: relative;
   min-height: 60px;
   margin-bottom: 20px;
+  padding-top: 5px;
   padding-left: 80px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    width: 250px;
-    min-height: 228px;
-    padding-top: 120px;
+    width: 245px;
+    min-height: 230px;
+    margin-bottom: 90px;
+    padding-top: 110px;
     padding-left: 0;
   }
 
-  // &:nth-child(2n + 1) {
-  //   margin-right: auto;
-  // }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 
   &:last-child {
     margin-bottom: 0;
 
+    @media (min-width: $desktop-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &:nth-last-child(2) {
     @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop-width) {
       margin-bottom: 20px;
     }
   }
@@ -76,8 +96,8 @@
 
       position: absolute;
       top: 0;
-      right: 0;
-      width: 150px;
+      right: -10px;
+      width: 140px;
       height: 230px;
       font-family: $font-family;
       font-size: $font-size--giant;

@@ -1,12 +1,14 @@
 .main-nav {
-  outline: 2px dotted red;
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
   }
 }
 
@@ -66,7 +68,6 @@
 }
 
 .main-nav__list {
-  outline: 1px dotted green;
   margin: 0;
   padding-left: 0;
   list-style: none;
@@ -105,10 +106,8 @@
 }
 
 .main-nav__link {
-  outline: 1px dotted green;
-
   display: block;
-  padding: 24px 0;
+  padding: 24px 0 20px 0;
 
   font-size: $font-size--x-large;
   font-weight: 500;
@@ -162,18 +161,10 @@
       height: 2px;
       background-color: $color-main;
 
-      @media (min-width: $tablet-width) {
-        &::after {
-          bottom: 0;
-        }
-      }
-
       @media (min-width: $desktop-width) {
-        &::after {
-          background-color: #ffffff;
-        }
+
+        background-color: #ffffff;
       }
     }
   }
-
 }

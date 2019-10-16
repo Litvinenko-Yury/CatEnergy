@@ -18,6 +18,7 @@
     color: #ffffff;
 
     @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
       color: $gray--darkest;
     }
   }

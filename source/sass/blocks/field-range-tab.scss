@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
 
-    bottom: 50px;
+    bottom: 65px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -15,7 +15,9 @@
 
 .field-range-tab__btn-before,
 .field-range-tab__btn-after {
+  padding-left: 0;
   padding-bottom: 6px;
+  padding-right: 0;
   font-size: $font-size--x-large;
   text-transform: uppercase;
   color: $gray--darkest;
@@ -38,8 +40,8 @@
 .field-range-tab__input {
   display: block;
   width: 428px;
-  margin-right: 22px;
-  margin-left: 22px;
+  margin-right: 24px;
+  margin-left: 24px;
   align-self: center;
   height: 2em;
   border-radius: 0.25em;

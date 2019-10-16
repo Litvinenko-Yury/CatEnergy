@@ -1,5 +1,5 @@
 .first-screen {
-  outline: 2px dotted red;
+  outline: px dotted red;
 
   position: relative;
   display: flex;
@@ -12,12 +12,13 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    min-height: 870px;
+    min-height: 830px;
+    padding-top: 40px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 696px;
-    margin-top: -50px;
     margin-bottom: 80px;
   }
 
@@ -86,7 +87,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 150px;
+    padding-top: 180px;
+    padding-left: 80px;
   }
 }
 
@@ -136,15 +138,16 @@
 
     margin-top: -80px;
     object-fit: contain;
-    ont-family: "object-fit: contain;"; /* stylelint-disable-line */
+    font-family: "object-fit: contain;"; /* stylelint-disable-line */
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    margin-left: -50px;
-
-    margin-top: 142px;
+    margin-left: -55px;
+    margin-top: 100px;
+    object-fit: cover;
+    font-family: "object-fit: cover;"; /* stylelint-disable-line */
   }
 }
 
