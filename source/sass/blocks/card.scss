@@ -3,17 +3,18 @@
   margin-right: 3px;
   margin-bottom: -1px;
   margin-left: 3px;
-  padding: 20px;
+  padding: 20px 17px 23px 17px;
   list-style: none;
   border: 1px solid $gray-base;
   background: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    margin-top: 140px;
+    margin-top: 135px;
+    margin-bottom: 5px;
     padding-top: 160px;
     padding-left: 38px;
-    padding-bottom: 24px;
+    padding-bottom: 40px;
     padding-right: 38px;
   }
 
@@ -40,6 +41,11 @@
       width: 30px;
       height: 2px;
       background: darken($gray-base, 12%);
+
+      @media (min-width: $tablet-width) {
+        top: 80px;
+        width: 60px;
+      }
     }
 
     &::after {
@@ -52,6 +58,11 @@
       width: 2px;
       height: 30px;
       background: darken($gray-base, 12%);
+
+      @media (min-width: $tablet-width) {
+        top: 51px;
+        height: 60px;
+      }
     }
   }
 
@@ -61,7 +72,9 @@
 
     @media (min-width: $tablet-width) {
       width: 100%;
-      margin-top: 0;
+      margin: 0;
+      margin-bottom: -1px;
+      padding: 0 37px 28px 37px;
       border: 1px solid darken($gray-base, 15%);
     }
 
@@ -79,9 +92,23 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 34px;
+  }
+}
+
+.card__img-wrap {
+  /*нужна только для mob*/
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
     display: block;
   }
 }
@@ -93,7 +120,11 @@
   border-top: 1px solid darken($gray-base, 15%);
 
   &--second {
+    padding-top: 15px;
+
     @media (min-width: $tablet-width) {
+      padding-top: 0;
+      padding-bottom: 0;
       border-top: none;
     }
 
@@ -117,28 +148,30 @@
 
 .card__img {
   outline: 1px dotted coral;
+
   position: relative;
   z-index: 1;
   display: block;
-  width: 140px;
-  height: 144px;
-  object-fit: cover;
-  font-family: "object-fit: cover;"; /* stylelint-disable-line */
+  max-width: 140px;
+  max-height: 144px;
+
+  //object-fit: cover;
+  //font-family: "object-fit: cover;"; /* stylelint-disable-line */
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: -200px;
+    top: -205px;
     left: 50%;
     transform: translateX(-50%);
-    width: 161px;
-    height: 172px;
+    max-width: 161px;
+    max-height: 172px;
   }
 
   &--large {
     @media (min-width: $tablet-width) {
-      top: -235px;
-      width: 195px;
-      height: 208px;
+      top: -245px;
+      max-width: 195px;
+      max-height: 208px;
     }
   }
 }
@@ -158,31 +191,37 @@
     width: 100%;
     margin-bottom: 22px;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 78px;
+    }
   }
 }
 
 /*обертка для сетки на $desktop-width, для группировки .card--second*/
 /* stylelint-disable-next-line*/
 .card__container-second {
+  margin: 0;
   padding-left: 0;
 
   @media (min-width: $tablet-width) {
-    padding-right: 30px;
-    padding-left: 30px;
+    //padding-right: 30px;
+    //padding-left: 30px;
   }
 }
 
 .card__box-second {
   //outline: 1px dotted black;
-
+  margin-bottom: 14px;
   padding-left: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 
-    padding-top: 20px;
+    margin-bottom: 5px;
+    padding-top: 25px;
     padding-bottom: 20px;
   }
 
@@ -193,23 +232,36 @@
 }
 
 .card__title {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   line-height: 1.25em;
   color: $gray--darkest;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: $font-size--x-large;
+    line-height: 1em;
     text-align: center;
   }
 
+  &--last {
+    margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 30px;
+    }
+  }
+
   &--second {
+    margin-bottom: 10px;
     color: $gray--darkenest;
 
     @media (min-width: $tablet-width) {
       max-width: 370px;
       margin-bottom: 0;
-
+      padding-left: 0;
       text-align: left;
     }
 
@@ -232,25 +284,37 @@
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   font-family: $font-family-second;
   font-size: $font-size--smaller;
   line-height: 1.33em;
   color: $gray--darken;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
     font-size: $font-size--larger;
     line-height: 1em;
+    border-bottom: 1px solid darken($gray-base, 15%);
   }
 
   &--last {
     display: block;
     margin-bottom: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
   }
 
   &--second {
+    margin-bottom: 0;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
     }
 
     @media (min-width: $desktop-width) {

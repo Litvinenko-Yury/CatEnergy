@@ -8,7 +8,7 @@
   <!-- <link rel="preload" href="fonts/oswald-v25-latin_cyrillic-regular.woff2" as="font">
   <link rel="preload" href="fonts/oswald-v25-latin_cyrillic-500.woff2" as="font"> -->
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=9bda3bf4-b0e3-42f6-bcda-4baf508132ae&lang=ru_RU"></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=9bda3bf4-b0e3-42f6-bcda-4baf508132ae&lang=ru_RU"></script> -->
   <!-- <script>
     document.createElement("picture");
   </script>
@@ -79,12 +79,14 @@
       <ul class="catalog__wrap">
         <li class="card" id="pro">
           <div class="card__wrap">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-500-chiken-tab@1x.webp 1x, img/img-catalog-cat-energy-pro-500-chiken-tab@2x.webp 2x">
-              <source type="image/webp" srcset="img/img-catalog-cat-energy-pro-500-chiken-mob@1x.webp 1x, img/img-catalog-cat-energy-pro-500-chiken-mob@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-500-chiken-tab@1x.png 1x, img/img-catalog-cat-energy-pro-500-chiken-tab@2x.png 2x">
-              <img class="card__img" src="img/img-catalog-cat-energy-pro-500-chiken-mob@1x.jpg" scrset="img/img-catalog-cat-energy-pro-500-chiken-mob@2x.jpg 2x" alt="Cat Energy Pro chiken 500 г">
-            </picture>
+            <div class="card__img-wrap">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-500-chiken-tab@1x.webp 1x, img/img-catalog-cat-energy-pro-500-chiken-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/img-catalog-cat-energy-pro-500-chiken-mob@1x.webp 1x, img/img-catalog-cat-energy-pro-500-chiken-mob@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-500-chiken-tab@1x.png 1x, img/img-catalog-cat-energy-pro-500-chiken-tab@2x.png 2x">
+                <img class="card__img" src="img/img-catalog-cat-energy-pro-500-chiken-mob@1x.jpg" scrset="img/img-catalog-cat-energy-pro-500-chiken-mob@2x.jpg 2x" alt="Cat Energy Pro chiken 500 г">
+              </picture>
+            </div>
 
             <div class="card__body">
               <h4 class="card__title">Cat Energy <br class="card__title-mob">PRO 500 г</h4>
@@ -107,10 +109,12 @@
 
         <li class="card">
           <div class="card__wrap">
-            <picture>
-              <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-1000-chiken-tab@1x.png">
-              <img class="card__img  card__img--large" src="img/img-catalog-cat-energy-pro-1000-chiken-mob@1x.jpg" alt="Cat Energy Pro chiken 1000 г">
-            </picture>
+            <div class="card__img-wrap">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-1000-chiken-tab@1x.png">
+                <img class="card__img  card__img--large" src="img/img-catalog-cat-energy-pro-1000-chiken-mob@1x.jpg" alt="Cat Energy Pro chiken 1000 г">
+              </picture>
+            </div>
 
             <div class="card__body">
               <h4 class="card__title">Cat Energy <br class="card__title-mob"> Pro 1000 г</h4>
@@ -133,12 +137,14 @@
 
         <li class="card">
           <div class="card__wrap">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-500-fish-tab@1x.webp 1x, img/img-catalog-cat-energy-pro-500-fish-tab@2x.webp 2x">
-              <source type="image/webp" srcset="img/img-catalog-cat-energy-pro-500-fish-mob@1x.webp 1x, img/img-catalog-cat-energy-pro-500-fish-mob@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-500-fish-tab@1x.png 1x, img/img-catalog-cat-energy-pro-500-fish-tab@2x.png 2x">
-              <img class="card__img" src="img/img-catalog-cat-energy-pro-500-fish-mob@1x.jpg" scrset="img/img-catalog-cat-energy-pro-500-fish-mob@2x.jpg 2x" alt="Cat Energy Pro fish 500 г">
-            </picture>
+            <div class="card__img-wrap">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-500-fish-tab@1x.webp 1x, img/img-catalog-cat-energy-pro-500-fish-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/img-catalog-cat-energy-pro-500-fish-mob@1x.webp 1x, img/img-catalog-cat-energy-pro-500-fish-mob@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-500-fish-tab@1x.png 1x, img/img-catalog-cat-energy-pro-500-fish-tab@2x.png 2x">
+                <img class="card__img" src="img/img-catalog-cat-energy-pro-500-fish-mob@1x.jpg" scrset="img/img-catalog-cat-energy-pro-500-fish-mob@2x.jpg 2x" alt="Cat Energy Pro fish 500 г">
+              </picture>
+            </div>
 
             <div class="card__body">
               <h4 class="card__title">Cat Energy <br class="card__title-mob"> PRO 500 г</h4>
@@ -161,12 +167,14 @@
 
         <li class="card">
           <div class="card__wrap">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-1000-chiken-tab@1x.webp 1x, img/img-catalog-cat-energy-pro-1000-chiken-tab@2x.webp 2x">
-              <source type="image/webp" srcset="img/img-catalog-cat-energy-pro-1000-chiken-mob@1x.webp 1x, img/img-catalog-cat-energy-pro-1000-chiken-mob@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-1000-fish-tab@1x.png 1x, img/img-catalog-cat-energy-pro-1000-fish-tab@2x.png 2x">
-              <img class="card__img  card__img--large" src="img/img-catalog-cat-energy-pro-1000-fish-mob@1x.jpg" scrset="img/img-catalog-cat-energy-pro-1000-fish-mob@2x.jpg 2x" alt="Cat Energy Pro fish 1000 г">
-            </picture>
+            <div class="card__img-wrap">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-1000-chiken-tab@1x.webp 1x, img/img-catalog-cat-energy-pro-1000-chiken-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/img-catalog-cat-energy-pro-1000-chiken-mob@1x.webp 1x, img/img-catalog-cat-energy-pro-1000-chiken-mob@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-pro-1000-fish-tab@1x.png 1x, img/img-catalog-cat-energy-pro-1000-fish-tab@2x.png 2x">
+                <img class="card__img  card__img--large" src="img/img-catalog-cat-energy-pro-1000-fish-mob@1x.jpg" scrset="img/img-catalog-cat-energy-pro-1000-fish-mob@2x.jpg 2x" alt="Cat Energy Pro fish 1000 г">
+              </picture>
+            </div>
 
             <div class="card__body">
               <h4 class="card__title">Cat Energy <br class="card__title-mob"> Pro 1000 г</h4>
@@ -189,12 +197,14 @@
 
         <li class="card" id="slim">
           <div class="card__wrap">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-500-buckwheat-tab@1x.webp 1x, img/img-catalog-cat-energy-slim-500-buckwheat-tab@2x.webp 2x">
-              <source type="image/webp" srcset="img/img-catalog-cat-energy-slim-500-buckwheat-mob@1x.webp 1x, img/img-catalog-cat-energy-slim-500-buckwheat-mob@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-500-buckwheat-tab@1x.png 1x, img/img-catalog-cat-energy-slim-500-buckwheat-tab@2x.png 2x">
-              <img class="card__img" src="img/img-catalog-cat-energy-slim-500-buckwheat-mob@1x.jpg" scrset="img/img-catalog-cat-energy-slim-500-buckwheat-mob@2x.jpg 2x" alt="Cat Energy Pro fish 500 г">
-            </picture>
+            <div class="card__img-wrap">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-500-buckwheat-tab@1x.webp 1x, img/img-catalog-cat-energy-slim-500-buckwheat-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/img-catalog-cat-energy-slim-500-buckwheat-mob@1x.webp 1x, img/img-catalog-cat-energy-slim-500-buckwheat-mob@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-500-buckwheat-tab@1x.png 1x, img/img-catalog-cat-energy-slim-500-buckwheat-tab@2x.png 2x">
+                <img class="card__img" src="img/img-catalog-cat-energy-slim-500-buckwheat-mob@1x.jpg" scrset="img/img-catalog-cat-energy-slim-500-buckwheat-mob@2x.jpg 2x" alt="Cat Energy Pro fish 500 г">
+              </picture>
+            </div>
 
             <div class="card__body">
               <h4 class="card__title">Cat Energy <br class="card__title-mob"> SLIM 500 г</h4>
@@ -217,12 +227,14 @@
 
         <li class="card">
           <div class="card__wrap">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-1000-buckwheat-tab@1x.webp 1x, img/img-catalog-cat-energy-slim-1000-buckwheat-tab@2x.webp 2x">
-              <source type="image/webp" srcset="img/img-catalog-cat-energy-slim-1000-buckwheat-mob@1x.webp 1x, img/img-catalog-cat-energy-slim-1000-buckwheat-mob@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-1000-buckwheat-tab@1x.png 1x, img/img-catalog-cat-energy-slim-1000-buckwheat-tab@2x.png 2x">
-              <img class="card__img  card__img--large" src="img/img-catalog-cat-energy-slim-1000-buckwheat-mob@1x.jpg" scrset="img/img-catalog-cat-energy-slim-1000-buckwheat-mob@2x.jpg 2x" alt="Cat Energy Pro fish 1000 г">
-            </picture>
+            <div class="card__img-wrap">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-1000-buckwheat-tab@1x.webp 1x, img/img-catalog-cat-energy-slim-1000-buckwheat-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/img-catalog-cat-energy-slim-1000-buckwheat-mob@1x.webp 1x, img/img-catalog-cat-energy-slim-1000-buckwheat-mob@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-1000-buckwheat-tab@1x.png 1x, img/img-catalog-cat-energy-slim-1000-buckwheat-tab@2x.png 2x">
+                <img class="card__img  card__img--large" src="img/img-catalog-cat-energy-slim-1000-buckwheat-mob@1x.jpg" scrset="img/img-catalog-cat-energy-slim-1000-buckwheat-mob@2x.jpg 2x" alt="Cat Energy Pro fish 1000 г">
+              </picture>
+            </div>
 
             <div class="card__body">
               <h4 class="card__title">Cat Energy <br class="card__title-mob"> SLIM 1000 г</h4>
@@ -245,12 +257,14 @@
 
         <li class="card">
           <div class="card__wrap">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-500-rice-tab@1x.webp 1x, img/img-catalog-cat-energy-slim-500-rice-tab@2x.webp 2x">
-              <source type="image/webp" srcset="img/img-catalog-cat-energy-slim-500-rice-mob@1x.webp 1x, img/img-catalog-cat-energy-slim-500-rice-mob@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-500-rice-tab@1x.png 1x, img/img-catalog-cat-energy-slim-500-rice-tab@2x.png 2x">
-              <img class="card__img" src="img/img-catalog-cat-energy-slim-500-rice-mob@1x.jpg" scrset="img/img-catalog-cat-energy-slim-500-rice-mob@2x.jpg 2x" alt="Cat Energy Pro rice 500 г">
-            </picture>
+            <div class="card__img-wrap">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-500-rice-tab@1x.webp 1x, img/img-catalog-cat-energy-slim-500-rice-tab@2x.webp 2x">
+                <source type="image/webp" srcset="img/img-catalog-cat-energy-slim-500-rice-mob@1x.webp 1x, img/img-catalog-cat-energy-slim-500-rice-mob@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/img-catalog-cat-energy-slim-500-rice-tab@1x.png 1x, img/img-catalog-cat-energy-slim-500-rice-tab@2x.png 2x">
+                <img class="card__img" src="img/img-catalog-cat-energy-slim-500-rice-mob@1x.jpg" scrset="img/img-catalog-cat-energy-slim-500-rice-mob@2x.jpg 2x" alt="Cat Energy Pro rice 500 г">
+              </picture>
+            </div>
 
             <div class="card__body">
               <h4 class="card__title">Cat Energy <br class="card__title-mob"> SLIM 500 г</h4>
@@ -273,7 +287,7 @@
 
         <li class="card  card--last">
           <div class="card__body  card__body--last">
-            <h4 class="card__title">Показать еще 100500 товаров</h4>
+            <h4 class="card__title  card__title--last">Показать еще 100500 товаров</h4>
             <p class="card__descr  card__descr--last">На самом деле вкусов гораздо больше!</p>
           </div>
           <a href="#!" class="btn card__buy  card__buy--last">Показать все</a>

@@ -1,7 +1,7 @@
 .declaration {
   min-height: 60px;
   margin: 0 20px 35px 20px;
-  padding: 65px 50px 45px 50px;
+  padding: 65px 50px 40px 50px;
   background-color: $color-main;
   background-image: url("../img/bg-declaration-mob@1x.jpg");
   background-repeat: no-repeat;
@@ -16,8 +16,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 70px 30px 75px 30px;
-    padding: 60px 90px 70px 105px;
+    margin: 70px 0 75px 0;
+    padding: 65px 105px 70px 90px;
     background-image: url("../img/bg-declaration-tab@1x.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -57,8 +57,9 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
     width: 180px;
+    margin: 0;
+    padding-top: 5px;
     text-align: left;
   }
 
