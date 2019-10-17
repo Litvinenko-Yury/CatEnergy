@@ -22,15 +22,6 @@
 .compare__wrap {
   /*блок-центровщик для содержимого*/
 
-  // width: $content-width--mob;
-  // margin: 0 auto;
-  // padding-bottom: 40px;
-
-  // @media (min-width: $tablet-width) {
-  //   width: 100%;
-  //   padding-bottom: 0;
-  // }
-
   @media (min-width: $desktop-width) {
     position: relative;
     display: flex;

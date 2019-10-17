@@ -123,9 +123,9 @@
     &::after {
       background-image: url("../img/bg-icon-advantage-1@1x.png");
 
-      // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      //   background-image: url("../img/bg-icon-advantage-1@2x.png");
-      // }
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-icon-advantage-1@2x.png");
+      }
     }
 
     &::before {
@@ -139,9 +139,9 @@
     &::after {
       background-image: url("../img/bg-icon-andvantage-2@1x.png");
 
-      // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      //   background-image: url("../img/bg-icon-andvantage-2@2x.png");
-      // }
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-icon-andvantage-2@2x.png");
+      }
     }
 
     &::before {
@@ -155,9 +155,9 @@
     &::after {
       background-image: url("../img/bg-icon-advantage-3@1x.png");
 
-      // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      //   background-image: url("../img/bg-icon-advantage-3@2x.png");
-      // }
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-icon-advantage-3@2x.png");
+      }
     }
 
     &::before {
@@ -171,9 +171,9 @@
     &::after {
       background-image: url("../img/bg-icon-advantage-4@1x.png");
 
-      // @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      //   background-image: url("../img/bg-icon-advantage-4@2x.png");
-      // }
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-icon-advantage-4@2x.png");
+      }
     }
 
     &::before {

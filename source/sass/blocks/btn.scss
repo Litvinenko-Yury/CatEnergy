@@ -24,16 +24,14 @@
 
   &:hover {
     text-decoration: none;
-    //color: $text-color;
     background-color: $btn-bg-hover;
   }
 
   &:focus {
-    //color: $text-color;
-    //background-color: darken($gray--light, 10%);
+    background-color: $btn-bg-hover;
   }
 
   &:active {
-    //color: $color-active;
+    color: $btn-color-down;
   }
 }

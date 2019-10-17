@@ -358,12 +358,13 @@
     color: $gray--darken;
     background: $btn-bg-second;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background: $btn-bg-hover--second;
     }
 
-    // &:active {
-
-    // }
+    &:active {
+      color: gray;
+    }
   }
 }
