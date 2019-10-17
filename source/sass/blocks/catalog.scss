@@ -11,13 +11,17 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
+    padding-top: 55px;
     padding-right: 0;
     padding-left: 0;
   }
 
   &--second {
     width: 100%;
-    //overflow: hidden;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 62px;
+    }
   }
 }
 
@@ -27,7 +31,7 @@
   padding-left: 0;
 
   @media (min-width: $tablet-width) {
-    outline: 3px dotted yellow;
+    //outline: 3px dotted yellow;
 
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +54,8 @@
 
     @media (min-width: $desktop-width) {
       display: flex;
-      margin-bottom: 85px;
+      margin-top: 55px;
+      margin-bottom: 88px;
       padding: 0;
     }
   }

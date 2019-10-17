@@ -29,7 +29,7 @@
     flex-direction: column;
     width: 245px;
     margin: 0;
-    padding: 65px 40px 45px 40px;
+    padding: 65px 35px 40px 35px;
     background-image: url("../img/bg-declaration-desk@1x.jpg");
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -64,6 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     text-align: center;
   }
 }

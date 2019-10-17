@@ -20,6 +20,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin-bottom: 12px;
   }
 
   /*добавляем "+" псевдоэлементом*/
@@ -81,6 +82,8 @@
     @media (min-width: $desktop-width) {
       width: 895px;
       padding: 0;
+      padding-top: 16px;
+      padding-bottom: 15px;
       border-left: none;
       border-right: none;
     }
@@ -195,6 +198,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 78px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 85px;
+    }
   }
 }
 
@@ -227,6 +234,7 @@
 
   @media (min-width: $desktop-width) {
     width: 610px;
+    margin-bottom: 0;
     padding: 0;
   }
 }
@@ -246,11 +254,21 @@
     text-align: center;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   &--last {
     margin-bottom: 10px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 25px;
     }
   }
 
@@ -305,6 +323,10 @@
     @media (min-width: $tablet-width) {
       padding-right: 25px;
       padding-left: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
     }
   }
 
