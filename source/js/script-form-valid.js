@@ -103,4 +103,3 @@ tel.onfocus = function () {
     svgTel.classList.remove("field-text__input-svg--error");
   }
 };
-

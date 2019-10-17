@@ -255,7 +255,8 @@
   @media (min-width: $tablet-width) {
     width: 300px;
     height: 520px;
-    object-fit: none;
+    //object-fit: fill;
+    //font-family: "object-fit: fill;"; /* stylelint-disable-line */
   }
 }
 

@@ -7,7 +7,6 @@ var $iconImage;
 var $iconImageSize;
 var $iconImageOffset;
 var $width = window.innerWidth;
-console.log($width);
 
 //задание масштаба для mob/tab/desk
 if ($width < 768) {
@@ -17,7 +16,6 @@ if ($width < 768) {
 } else {
   $zoom = 17;
 }
-console.log("zoom = " + $zoom);
 
 //задание центра карты для mob/tab/desk
 if ($width < 1300) {
@@ -25,7 +23,6 @@ if ($width < 1300) {
 } else {
   $center = [59.939003, 30.319332];
 }
-console.log("center = " + $center);
 
 //задание изображения маркера для mob/tab/desk
 if ($width < 768) {
@@ -33,7 +30,6 @@ if ($width < 768) {
 } else {
   $iconImage = "img/icon-map-pin-tab@1x.png";
 }
-console.log("icon = " + $iconImage);
 
 //задание размеров маркера для mob/tab/desk
 if ($width < 768) {
@@ -41,7 +37,6 @@ if ($width < 768) {
 } else {
   $iconImageSize = [113, 106];
 }
-console.log("iconSize = " + $iconImageSize);
 
 //задание смещения иконки маркера для mob/tab/desk
 if ($width < 768) {
@@ -49,8 +44,6 @@ if ($width < 768) {
 } else {
   $iconImageOffset = [-35, -106];
 }
-console.log("iconOffset = " + $iconImageOffset);
-
 
 //=========================
 // Создание экземпляра карты и его привязка к контейнеру с заданным id ("map").
