@@ -1,6 +1,4 @@
 .banner {
-  outline: 1px solid red;
-
   padding: 30px 20px 25px 20px;
   background: #ffffff;
 
@@ -28,8 +26,6 @@
 }
 
 .banner__wrap {
-  outline: 1px solid coral;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,8 +36,6 @@
 }
 
 .banner__title {
-  outline: 2px dotted blue;
-
   width: 125px;
   font-size: $font-size--larger;
   line-height: 1.25em;
@@ -54,8 +48,6 @@
 }
 
 .banner__text {
-  outline: 2px dotted blue;
-
   width: 135px;
   font-family: $font-family-second;
   line-height: 1.42em;

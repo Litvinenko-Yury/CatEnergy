@@ -1,6 +1,4 @@
 .first-screen {
-  outline: px dotted red;
-
   position: relative;
   display: flex;
   justify-content: center;
@@ -60,8 +58,6 @@
 }
 
 .first-screen__wrap {
-  outline: 2px dotted black;
-
   width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -111,8 +107,6 @@
 }
 
 .first-screen__img-mob {
-  outline: 1px dotted coral;
-
   display: block;
   width: 280px;
   height: 270px;
@@ -127,8 +121,6 @@
 }
 
 .first-screen__img-tab {
-  outline: 1px dotted coral;
-
   display: none;
 
   @media (min-width: $tablet-width) {

@@ -1,6 +1,4 @@
 .field-range-mob {
-  outline: 1px dotted red;
-
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -44,8 +42,6 @@
 
 .field-range-mob__btn-before,
 .field-range-mob__btn-after {
-  outline: 1px dotted blue;
-
   position: absolute;
   top: -110%;
 

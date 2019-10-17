@@ -43,8 +43,6 @@
 }
 
 .compare__container-1 {
-  outline: 2px solid coral;
-
   margin-bottom: 36px;
   padding: 15px 20px 0 20px;
 
@@ -77,8 +75,6 @@
 }
 
 .compare__text {
-  outline: 1px dotted darkorange;
-
   margin-bottom: 27px;
   line-height: $line-height;
   font-family: $font-family-second;
@@ -181,8 +177,6 @@
 }
 
 .compare__total {
-  outline: 1px dotted black;
-
   text-align: center;
   text-transform: uppercase;
 
@@ -211,8 +205,6 @@
 }
 
 .compare__container-2 {
-  outline: 2px solid dodgerblue;
-
   @media (min-width: $tablet-width) {
     position: relative;
     min-height: 635px;
@@ -229,8 +221,6 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    outline: 1px dotted red;
-
     position: absolute;
     width: auto;
     height: auto;
@@ -264,8 +254,6 @@
 }
 
 .compare__img {
-  outline: 2px solid red;
-
   display: block;
   width: 280px;
   height: 240px;

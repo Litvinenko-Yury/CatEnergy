@@ -150,16 +150,11 @@
 }
 
 .card__img {
-  outline: 1px dotted coral;
-
   position: relative;
   z-index: 1;
   display: block;
   max-width: 140px;
   max-height: 144px;
-
-  //object-fit: cover;
-  //font-family: "object-fit: cover;"; /* stylelint-disable-line */
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -180,7 +175,6 @@
 }
 
 .card__body {
-  outline: 1px dotted blueviolet;
   width: 50%;
 
   @media (min-width: $tablet-width) {
@@ -210,15 +204,9 @@
 .card__container-second {
   margin: 0;
   padding-left: 0;
-
-  @media (min-width: $tablet-width) {
-    //padding-right: 30px;
-    //padding-left: 30px;
-  }
 }
 
 .card__box-second {
-  //outline: 1px dotted black;
   margin-bottom: 14px;
   padding-left: 0;
 
@@ -284,7 +272,6 @@
     }
 
     @media (min-width: $desktop-width) {
-      outline: 1px dotted red;
       width: 285px;
     }
   }
@@ -297,8 +284,6 @@
 }
 
 .card__descr {
-  outline: 1px dotted green;
-
   display: flex;
   justify-content: space-between;
 

@@ -1,6 +1,4 @@
 .advantages {
-  //outline: 1px dotted red;
-
   margin-bottom: 45px;
   padding-left: 20px;
   padding-right: 20px;
@@ -50,8 +48,6 @@
 }
 
 .advantages__item {
-  outline: 1px dotted blue;
-
   position: relative;
   min-height: 60px;
   margin-bottom: 20px;
@@ -92,8 +88,6 @@
   /*общие свойства для всех ::before*/
   &::before {
     @media (min-width: $tablet-width) {
-      outline: 1px dotted palevioletred;
-
       position: absolute;
       top: 0;
       right: -10px;
