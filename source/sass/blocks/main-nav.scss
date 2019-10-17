@@ -161,8 +161,15 @@
       height: 2px;
       background-color: $color-main;
 
-      @media (min-width: $desktop-width) {
+      // @media (min-width: $desktop-width) {
+      //   background-color: #ffffff;
+      // }
+    }
+  }
 
+  &--active-index {
+    &::after {
+      @media (min-width: $desktop-width) {
         background-color: #ffffff;
       }
     }

@@ -1,17 +1,26 @@
 .field-actions {
-  outline: 2px dotted coral;
+  outline: 1px dotted coral;
 
   display: flex;
   flex-direction: column;
 
-  padding: 20px;
+  margin-bottom: 33px;
+  padding-right: 20px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     align-items: center;
 
+    margin-bottom: 50px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   &--btn {
@@ -39,6 +48,11 @@
 
   @media (min-width: $tablet-width) {
     width: 282px;
+    margin-left: 10px;
     font-size: $font-size--larger;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 30px;
   }
 }
