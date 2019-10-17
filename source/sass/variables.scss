@@ -9,8 +9,6 @@ $font-size-h1: 36px;
 $font-size-h2: 36px;
 $font-size-h3: 24px;
 $font-size-h4: 16px;
-//$font-size-h5: px;
-//$font-size-h6: px;
 
 $font-size--giant: 281px;
 $font-size--xl-large: 24px;
@@ -19,7 +17,6 @@ $font-size--large: 18px;
 $font-size--larger: 16px;
 $font-size: 14px;
 $font-size--smaller: 12px;
-//$font-size--small: px;
 
 $line-height-large: 1.6667em;
 $line-height: 1.2857em;
@@ -34,15 +31,15 @@ $color-main--dark: #5eaa2f;
 
 $color-map: #fdf7f1;
 
-$gray-base: #f2f2f2; //242-242-242
-$gray--dark: #ededed; //237-237-237 ;
-$gray--darken: #444444; //68-68-68;
-$gray--darker-10: rgba(50, 56, 63, 0.1); //50 56 63 0.1
-$gray--darker: #333333; //51-51-51
-$gray--darkenest: #222222; //34-34-34;
-$gray--darkest: #111111; //17-17-17;
+$gray-base: #f2f2f2;
+$gray--dark: #ededed;
+$gray--darken: #444444;
+$gray--darker-10: rgba(50, 56, 63, 0.1);
+$gray--darker: #333333;
+$gray--darkenest: #222222;
+$gray--darkest: #111111;
 
-$text-color: #333333; //51-51-51; // Global text color on <body>;
+$text-color: #333333; // Global text color on <body>;
 
 //=============================
 //===Components===
@@ -50,18 +47,11 @@ $text-color: #333333; //51-51-51; // Global text color on <body>;
 $content-width--desktop: 1220px;
 $content-width--tablet: 708px;
 $content-width--mob: 280px;
-
-//$padding-base-vertical:;
-//$padding-base-horizontal: ;
-
-//$border-radius-base: ;
-
 //=============================
 //===Logo====
 //=============================
 $logo-color: $gray--darkest;
 $logo-color-text: $gray--darken;
-//$logo-color--active: ;
 $logo-color--hover: #414141;
 $logo-color--hover-text: #696969;
 $logo-color--down: #707070;
@@ -71,7 +61,6 @@ $logo-color--down-text: #8f8f8f;
 //===Links====
 //=============================
 $link-color: #000000;
-//$link-color--active: ;
 $link-color--hover: #000000;
 $link-color--down: rgba(0, 0, 0, 0.3);
 
@@ -79,16 +68,8 @@ $link-color--down: rgba(0, 0, 0, 0.3);
 //===Buttons===
 //=============================
 
-//$btn-padding-vertical--large: px;
-//$btn-padding-horizontal--large: px;
 $btn-padding-vertical: 12px;
 $btn-padding-horizontal: 12px;
-//$btn-padding-vertical--small: px;
-//$btn-padding-horizontal--small: px;
-
-//$btn-font-size: ;
-//$btn-line-height: em;
-//$btn-font-wight: ;
 
 $btn-color: #ffffff;
 $btn-color--second: #333333;
@@ -101,28 +82,13 @@ $btn-color-down--second: rgba(51, 51, 51, 0.3);
 
 $btn-bg: $color-main;
 $btn-bg-hover: $color-main--dark;
-//$btn-bg-down: $color-main--dark;
 
 $btn-bg-second: #f2f2f2;
 $btn-bg-hover--second: #ebebeb;
 $btn-bg-down--second: #ebebeb;
 
-//$btn-border-radius-base: ;
-
 $btn-border-color-base: #bebebe;
 $btn-border-color-hover: #989898;
-
-//=============================
-//===Slider====
-//=============================
-//$slider-btn--base: ;
-//$slider-btn--hover: ;
-//$slider-btn--active: ;
-
-//$slider-toggle: ;
-//$slider-toggle--active: ;
-//$slider-toggle--hover: ;
-//$slider-toggle--down: ;
 
 //=============================
 //===Input===
