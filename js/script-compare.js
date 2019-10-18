@@ -9,7 +9,6 @@ var runnable = document.querySelector(".field-range-mob__wrap");
 /*=====*/
 /*Сравнение изображения (вкл/выкл) для mob*/
 btnBeforeMob.addEventListener("click", function () {
-  console.log("клик Было");
 
   imgSubContainer2.classList.add("compare__overlay");
   imgSubContainer2.classList.remove("compare__opacity0", "compare__opacity1");
@@ -26,7 +25,6 @@ btnBeforeMob.addEventListener("click", function () {
 });
 
 btnAfterMob.addEventListener("click", function () {
-  console.log("клик Стало");
 
   imgSubContainer1.classList.add("compare__overlay");
   imgSubContainer1.classList.remove("compare__opacity0", "compare__opacity1");
