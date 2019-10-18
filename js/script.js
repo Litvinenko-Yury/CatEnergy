@@ -5,8 +5,8 @@ var mainNav = document.querySelector(".main-nav__list");
 
 /*=====*/
 /*если JS есть, для mob свернуть меню и показать бургер*/
-//mainNav.classList.add("main-nav__list--js");
-//burger.classList.remove("burger--no-js");
+mainNav.classList.add("main-nav__list--js");
+burger.classList.remove("burger--no-js");
 
 /*=====*/
 /*вкл/выкл анимации меню и бугера*/
