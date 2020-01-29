@@ -57,7 +57,6 @@ function init() {
     suppressMapOpenBlock: true
   });
 
-
   // Создание метки
   myPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
     hintContent: 'Cat Energy',
